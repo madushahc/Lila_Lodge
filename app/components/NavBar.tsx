@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import img from "../../public/favicon.jpg";
 
 export default function NavBar() {
   const [isClick, setClick] = useState(false);
@@ -8,23 +9,24 @@ export default function NavBar() {
   const toggleNavbar = () => {
     setClick(!isClick);
   };
+ 
 
   return (
     <nav className="bg-purple-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16 ">
           {/* Logo Section */}
-          <div className="flex place-items-start">
+          <div className="flex">
           <div className="flex items-center flex-shrink-0 flex-initial">
           <Image
-          src="/favicon.jpg"
+          src={img}
           alt="logo"
           width={54}
           height={54}
-          priority
+          priority={true}
         />
-        <a href="/" className="text-white text-xl font-bold">
-    Logo
+        <a href="/" className="text-white text-xl font-bold ml-2">
+    Lila Lodge
   </a>
   
           </div>
