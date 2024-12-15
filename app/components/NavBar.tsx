@@ -1,38 +1,38 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
-import img from "../../public/favicon.jpg";
+import img from "../public/favicon.jpg";
 
 export default function NavBar() {
   const [isClick, setClick] = useState(false);
 
+  useEffect(() => {
+    // Ensure this logic runs only on the client
+    setClick(false);
+  }, []);
+
   const toggleNavbar = () => {
     setClick(!isClick);
   };
- 
-
   return (
     <nav className="bg-purple-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 ">
           {/* Logo Section */}
           <div className="flex">
-          <div className="flex items-center flex-shrink-0 flex-initial">
-          <Image
-          src={img}
-          alt="logo"
-          width={54}
-          height={54}
-          priority={true}
-        />
-        <a href="/" className="text-white text-xl font-bold ml-2">
-    Lila Lodge
-  </a>
-  
+            <div className="flex items-center flex-shrink-0 flex-initial">
+              <Image
+                src={img}
+                alt="logo"
+                width={54}
+                height={54}
+                priority={true}
+              />
+              <a href="/" className="text-white text-xl font-bold ml-2">
+                Lila Lodge
+              </a>
+            </div>
           </div>
-
-          </div>
-
           {/* Desktop Navigation */}
           <div className="hidden md:block ">
             <div className="ml-4 flex items-center space-x-4">
@@ -51,6 +51,13 @@ export default function NavBar() {
               >
                 Services
               </a>
+              
+              <a
+                href="/Gallery"
+                className="text-white hover:bg-white hover:text-black rounded-lg p-2"
+              >
+                Gallery
+              </a>
               <a
                 href="/Contact"
                 className="text-white hover:bg-white hover:text-black rounded-lg p-2"
@@ -59,7 +66,6 @@ export default function NavBar() {
               </a>
             </div>
           </div>
-
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
             <button
@@ -102,7 +108,6 @@ export default function NavBar() {
             </button>
           </div>
         </div>
-
         {/* Mobile Navigation Menu */}
         {isClick && (
           <div className="md:hidden">
@@ -124,6 +129,12 @@ export default function NavBar() {
                 className="block text-white hover:bg-white hover:text-black rounded-lg p-2"
               >
                 Services
+              </a>
+              <a
+                href="/Gallery"
+                className="block text-white hover:bg-white hover:text-black rounded-lg p-2"
+              >
+                Gallery
               </a>
               <a
                 href="/Contact"
