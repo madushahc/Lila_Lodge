@@ -6,6 +6,7 @@ import {FaFacebook } from "react-icons/fa";
 import {FaTwitter } from "react-icons/fa";
 import Image from "next/image";
 
+
 export default function Form() {
   const form = useRef<HTMLFormElement>(null);
 
@@ -40,6 +41,11 @@ export default function Form() {
       {/* Contact Details */}
       <div className="w-full md:w-1/2 space-y-6">
         <h1 className="text-3xl font-semibold">Contact Us</h1>
+    <div className="flex flex-col md:flex-row justify-between px-8 py-12 max-w-7xl mx-auto bg-purple-100">
+      {/* Contact Details */}
+      <div className="w-full md:w-1/2 space-y-6">
+        <h1 className="text-4xl font-semibold">Contact Us</h1>
+
         <div>
           <h3 className="text-lg font-medium">Address:</h3>
           <p>No.138/15, Galle Road, Bentota, Sri Lanka</p>
@@ -66,6 +72,18 @@ export default function Form() {
               <FaFacebook className='text-2xl text-black cursor-pointer hover:text-purple-600'/>
               <FaTwitter  className='text-2xl text-black cursor-pointer hover:text-purple-600'/>
           </div>
+        <div className="flex items-center space-x-4">
+          <span>Follow us on</span> <br></br>
+          ICons tika danna
+          <a href="#" className="text-gray-500 hover:text-black">
+            <i className="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" className="text-gray-500 hover:text-black">
+            <i className="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" className="text-gray-500 hover:text-black">
+            <i className="fa-brands fa-facebook"></i>
+          </a>
         </div>
       </div>
 
@@ -319,8 +337,9 @@ export default function Form() {
           Send Inquiry
         </button>
       </form>
+
       </div><br></br>
-      
+     
       <div className="rounded-2xl flex flex-col md:flex-row justify-between item-center bg-purple-200 ">
       <div className=" px-8 py-12 ">
         <h1 className="text-[30px] font-bold">Our Location</h1>

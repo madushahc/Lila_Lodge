@@ -1,6 +1,11 @@
+import Form from "../components/Form";
+
+
 export default function page() {
     return (
-      <div>Hello Contact</div>
+      <div>
+       <Form />
+      </div>
     );
   }
   
