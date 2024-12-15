@@ -28,8 +28,10 @@ export default function NavBar() {
                 height={54}
                 priority={true}
               />
-              <a href="/" className="text-white text-xl font-bold ml-2">
-                Lila Lodge
+              <a href="/" >
+              <p className='text-white font-bold text-3xl pb-6 ml-2'>
+                    Lila<span className='text-purple-600'>Lodge</span>
+              </p>               
               </a>
             </div>
           </div>
