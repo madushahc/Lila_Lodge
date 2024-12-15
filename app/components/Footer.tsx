@@ -26,11 +26,11 @@ function Footer() {
         </div>
         <div className='p-5'>
             <ul>
-                <li className='text-white text-md pb-2 fint-bold hover:text-purple-600 cursor-pointer'>Home</li>
-                <li className='text-white text-md pb-2 fint-bold hover:text-purple-600 cursor-pointer'>Accommodation</li>
-                <li className='text-white text-md pb-2 fint-bold hover:text-purple-600 cursor-pointer'>Services</li>
-                <li className='text-white text-md pb-2 fint-bold hover:text-purple-600 cursor-pointer'>Gallery</li>
-                <li className='text-white text-md pb-2 fint-bold hover:text-purple-600 cursor-pointer'>Contacts</li>
+                <a href="/"> <li className='text-white text-md pb-2 fint-bold hover:text-purple-600 cursor-pointer'>Home</li></a>
+                <a href="/Accommodation"><li className='text-white text-md pb-2 fint-bold hover:text-purple-600 cursor-pointer'>Accommodation</li></a>
+                <a href="/Services"><li className='text-white text-md pb-2 fint-bold hover:text-purple-600 cursor-pointer'>Services</li></a>
+                <a href="/Gallery"><li className='text-white text-md pb-2 fint-bold hover:text-purple-600 cursor-pointer'>Gallery</li></a>
+                <a href="/Contact"><li className='text-white text-md pb-2 fint-bold hover:text-purple-600 cursor-pointer'>Contacts</li></a>
             </ul>
         </div>
 
@@ -38,7 +38,7 @@ function Footer() {
             <ul>
                 <li className='text-white text-md pb-2 fint-bold hover:text-purple-600 cursor-pointer flex md:flex-row'>
                     <GrLocation className='text-2xl cursor-pointer hover:text-purple-600'/>
-                    <span className='pr-4'></span>Lila Lodge, Bentota
+                    <span className='pr-4'></span>No.138/15, Galle Road, Bentota
                 </li>
                 <li className='text-white text-md pb-2 fint-bold hover:text-purple-600 cursor-pointer flex md:flex-row pt-2'>
                     <FiPhone className='text-2xl cursor-pointer hover:text-purple-600'/>
@@ -51,7 +51,7 @@ function Footer() {
             </ul>
         </div>
     </div>
-    <div className='flex flex-col rounded-b-2xl justify-center iteem-center text-center pb-5 bg-black opacity-90'>
+    <div className='flex flex-col justify-center iteem-center text-center pb-5 bg-black opacity-90'>
         <hr className='pb-10 text-white'></hr>
         <div className='text-white h-1/2 w-full flex md:flex-row flex-col justify-around items-start pb-5'>
             <h1 className='font-semibold'> Copyright © 2024 - Lila Villa Bentota - All Rights Reserved. </h1>

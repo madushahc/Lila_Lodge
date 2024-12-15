@@ -1,6 +1,11 @@
 "use client";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
+import {FaInstagram } from "react-icons/fa";
+import {FaFacebook } from "react-icons/fa";
+import {FaTwitter } from "react-icons/fa";
+import Image from "next/image";
+
 
 export default function Form() {
   const form = useRef<HTMLFormElement>(null);
@@ -31,10 +36,16 @@ export default function Form() {
   };
 
   return (
+    <div className="p-10 ">
+    <div className="rounded-xl shadow-xl flex flex-col md:flex-row justify-between px-8 py-12  bg-purple-200">
+      {/* Contact Details */}
+      <div className="w-full md:w-1/2 space-y-6">
+        <h1 className="text-3xl font-semibold">Contact Us</h1>
     <div className="flex flex-col md:flex-row justify-between px-8 py-12 max-w-7xl mx-auto bg-purple-100">
       {/* Contact Details */}
       <div className="w-full md:w-1/2 space-y-6">
         <h1 className="text-4xl font-semibold">Contact Us</h1>
+
         <div>
           <h3 className="text-lg font-medium">Address:</h3>
           <p>No.138/15, Galle Road, Bentota, Sri Lanka</p>
@@ -52,6 +63,15 @@ export default function Form() {
           <p>+94 714 241 591</p>
         </div>
         {/* Social Icons */}
+        <div className="flex-col items-center ">
+          <span className="font-bold">Follow us on</span> <br></br>
+        
+          <div className='flex gap-6 pt-5'>
+              {/*icons*/}
+              <FaInstagram className='text-2xl text-black cursor-pointer hover:text-purple-600'/>
+              <FaFacebook className='text-2xl text-black cursor-pointer hover:text-purple-600'/>
+              <FaTwitter  className='text-2xl text-black cursor-pointer hover:text-purple-600'/>
+          </div>
         <div className="flex items-center space-x-4">
           <span>Follow us on</span> <br></br>
           ICons tika danna
@@ -317,6 +337,19 @@ export default function Form() {
           Send Inquiry
         </button>
       </form>
+
+      </div><br></br>
+     
+      <div className="rounded-2xl flex flex-col md:flex-row justify-between item-center bg-purple-200 ">
+      <div className=" px-8 py-12 ">
+        <h1 className="text-[30px] font-bold">Our Location</h1>
+        <p className="text-[20px] text-gray-700">Visit our place to enjoy your self</p>
+      </div>
+
+      <div className="p-5">
+      <iframe className="rounded-xl w-full max-w-[1000px] h-[600px] md:w-[1000px] md:h-[600px]"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.792671221893!2d80.0022065!3d6.420679799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae22e9bd916d201%3A0x853fe2fd18c9417b!2s138%2C%2015%20Galle%20Rd%2C%20Bentota!5e0!3m2!1sen!2slk!4v1734271238691!5m2!1sen!2slk" ></iframe>
+      </div>
+      </div>
     </div>
   );
 }
