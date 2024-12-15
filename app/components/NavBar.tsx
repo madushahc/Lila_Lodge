@@ -21,7 +21,7 @@ export default function NavBar() {
           alt="logo"
           width={54}
           height={54}
-          className="mr-2"
+          priority
         />
         <a href="/" className="text-white text-xl font-bold">
     Logo
