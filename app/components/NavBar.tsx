@@ -19,7 +19,7 @@ export default function NavBar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-[90%] xl:w-[90%] mx-auto ">
         <div className="flex items-center justify-between h-16 ">
           {/* Logo Section */}
-<<<<<<< Updated upstream
+
           <div className="flex">
             <div className="flex items-center flex-shrink-0 flex-initial">
               <Image
@@ -32,13 +32,7 @@ export default function NavBar() {
               <a href="/" className="text-white text-xl font-bold ml-2">
                 Lila Lodge
               </a>
-=======
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 flex items-center justify-center">
-              <p className="text-xl md:text-2xl text-white font-bold">
-                Lila<span className="text-purple-600">Lodge</span>
-              </p>
->>>>>>> Stashed changes
+
             </div>
           </div>
           {/* Desktop Navigation */}

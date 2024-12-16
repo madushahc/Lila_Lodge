@@ -1,9 +1,3 @@
-<<<<<<< Updated upstream
-export default function Home() {
-  return (
-    <div>
-      Hello
-=======
 import Image from "next/image";
 import img1 from "./public/_O4A8549.jpg";
 import img2 from "./public/_O4A8536.jpg";
@@ -97,7 +91,6 @@ export default function Home() {
   </div>
 </div>     
         </div>
->>>>>>> Stashed changes
     </div>
   );
 }
