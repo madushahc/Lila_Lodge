@@ -40,7 +40,9 @@ export default function Page() {
       <GalleryNav />
       
       {/* Large Image Display */}
+
       <div className="flex justify-center items-center mt-6 mb-6 px-4">
+
         <Image
           src={selectedImage.src}
           width={1000}
@@ -75,6 +77,7 @@ export default function Page() {
           </div>
         ))}
       </div>
+
     </div>
   );
 }

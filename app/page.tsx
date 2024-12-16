@@ -9,6 +9,7 @@ const handleBookNow = () => {
   window.location.href = '/Book';
 };
 
+
 export default function Home() {
   return (
     <div className="bg-gray-50 min-h-screen">
@@ -112,6 +113,7 @@ export default function Home() {
     </button>
   </div>
 </div>
+
     </div>
   );
 }
