@@ -1,9 +1,8 @@
 "use client";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
-import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
 
-export default function Form() {
+export default function Book() {
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: React.FormEvent) => {
@@ -12,7 +11,7 @@ export default function Form() {
       emailjs
         .sendForm(
           "service_xpeqglo",
-          "template_5c1ik1i",
+          "template_3itmuko",
           form.current,
           "WHT6NzkxL1VaP3GKD"
         )
@@ -32,35 +31,7 @@ export default function Form() {
 
   return (
     <div className="p-10">
-      <div className="rounded-xl shadow-xl flex flex-col md:flex-row justify-between px-8 py-12 bg-purple-200">
-        {/* Contact Details */}
-        <div className="w-full md:w-1/2 space-y-6">
-          <h1 className="text-4xl font-semibold">Contact Us</h1>
-          <div>
-            <h3 className="text-lg font-medium">Address:</h3>
-            <p>No.138/15, Galle Road, Bentota, Sri Lanka</p>
-          </div>
-          <div>
-            <h3 className="text-lg font-medium">Email:</h3>
-            <p>antheagrussell22@icloud.com | lilalodgebentota@gmail.com</p>
-          </div>
-          <div>
-            <h3 className="text-lg font-medium">Whatsapp:</h3>
-            <p>+94 714 241 951 | +44 7485 060 543</p>
-          </div>
-          <div>
-            <h3 className="text-lg font-medium">Phone:</h3>
-            <p>+94 714 241 591</p>
-          </div>
-          {/* Social Icons */}
-          <div className="flex items-center space-x-6 pt-5">
-            <span className="font-bold">Follow us on:</span>
-            <FaInstagram className="text-2xl text-black cursor-pointer hover:text-purple-600" />
-            <FaFacebook className="text-2xl text-black cursor-pointer hover:text-purple-600" />
-            <FaTwitter className="text-2xl text-black cursor-pointer hover:text-purple-600" />
-          </div>
-        </div>
-
+      <div className="rounded-xl shadow-xl flex flex-col md:flex-row justify-between bg-purple-200">
         {/* Contact Form */}
         <form
           ref={form}
@@ -69,43 +40,90 @@ export default function Form() {
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label className="block mb-2 text-sm font-medium">Full Name</label>
+              <label className="block mb-2 text-sm font-medium text-gray-800">Full Name</label>
               <input
                 type="text"
                 name="user_name"
                 required
-                className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500"
+                className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-200"
               />
             </div>
             <div>
-              <label className="block mb-2 text-sm font-medium">Phone</label>
+              <label className="block mb-2 text-sm font-medium text-gray-800">Phone</label>
               <input
                 type="text"
                 name="user_phone"
                 required
-                className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500"
+                className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-200"
               />
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label className="block mb-2 text-sm font-medium">Email</label>
+              <label className="block mb-2 text-sm font-medium text-gray-800">Whatsapp Number</label>
+              <input
+                type="text"
+                name="user_whatsapp"
+                required
+                className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-200"
+              />
+            </div>
+            <div>
+              <label className="block mb-2 text-sm font-medium text-gray-800">Pax Count</label>
+              <input
+                type="number"
+                name="user_pax"
+                required
+                className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-200"
+              />
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label className="block mb-2 text-sm font-medium text-gray-800">Room</label>
+              <select
+                name="user_room"
+                defaultValue=""
+                required
+                className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-200"
+              >
+                <option value="" disabled>
+                  Select your room
+                </option>
+                <option value="Deluxe Double Room">Deluxe Double Room</option>
+                <option value="Deluxe Family Room">Deluxe Family Room</option>
+                <option value="any prefer room type">Any Preferred Room Type</option>
+              </select>
+            </div>
+            <div>
+              <label className="block mb-2 text-sm font-medium text-gray-800">Address</label>
+              <input
+                type="text"
+                name="user_address"
+                required
+                className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-200"
+              />
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label className="block mb-2 text-sm font-medium text-gray-800">Email</label>
               <input
                 type="email"
                 name="user_email"
                 required
-                className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500"
+                className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-200"
               />
             </div>
             <div>
-              <label className="block mb-2 text-sm font-medium">Country</label>
+              <label className="block mb-2 text-sm font-medium text-gray-800">Country</label>
               <select
-  name="user_country"
-  defaultValue=""
-  required
-  className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500"
->
-  <option value="" disabled>
+                name="user_country"
+                defaultValue=""
+                required
+                className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-200"
+              >
+                <option value="" disabled>
     Select your country
   </option>
   <option value="Afghanistan">Afghanistan</option>
@@ -303,39 +321,44 @@ export default function Form() {
   <option value="Zambia">Zambia</option>
   <option value="Zimbabwe">Zimbabwe</option>
 </select>
-
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label className="block mb-2 text-sm font-medium text-gray-800">Check In Date</label>
+              <input
+                type="date"
+                name="user_checkIn"
+                required
+                className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-200"
+              />
+            </div>
+            <div>
+              <label className="block mb-2 text-sm font-medium text-gray-800">Check Out Date</label>
+              <input
+                type="date"
+                name="user_checkout"
+                required
+                className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-200"
+              />
             </div>
           </div>
           <div>
-            <label className="block mb-2 text-sm font-medium">Message</label>
+            <label className="block mb-2 text-sm font-medium text-gray-800">Message</label>
             <textarea
               name="message"
               rows={5}
               required
-              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500"
+              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-200"
             />
           </div>
           <button
             type="submit"
-            className="w-full py-3 bg-black text-white font-medium uppercase rounded hover:bg-gray-700"
+            className="w-full py-3 bg-black text-white font-medium uppercase rounded hover:bg-gray-700 focus:ring-4 focus:ring-gray-400 transition-all duration-300"
           >
-            Send Inquiry
+            Book Now
           </button>
         </form>
-      </div>
-
-      {/* Map Section */}
-      <div className="rounded-2xl flex flex-col md:flex-row justify-between items-center bg-purple-200 mt-10">
-        <div className="px-8 py-12">
-          <h1 className="text-3xl font-bold">Our Location</h1>
-          <p className="text-lg text-gray-700">Visit our place to enjoy yourself</p>
-        </div>
-        <div className="p-5">
-          <iframe
-            className="rounded-xl w-full max-w-[1000px] h-[400px] md:w-[1000px] md:h-[600px]"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.792671221893!2d80.0022065!3d6.420679799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae22e9bd916d201%3A0x853fe2fd18c9417b!2s138%2C%2015%20Galle%20Rd%2C%20Bentota!5e0!3m2!1sen!2slk!4v1734271238691!5m2!1sen!2slk"
-          ></iframe>
-        </div>
       </div>
     </div>
   );

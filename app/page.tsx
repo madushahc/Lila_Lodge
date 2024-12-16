@@ -1,7 +1,13 @@
+'use client';
 import Image from "next/image";
 import img1 from "./public/_O4A8549.jpg";
 import img2 from "./public/_O4A8536.jpg";
+import img3 from "./public/_O4A8709.jpg";
 import { FaMapMarkerAlt, FaTree, FaBed, FaHeart } from 'react-icons/fa';
+const handleBookNow = () => {
+  // Navigate to form.tsx using window.location
+  window.location.href = '/Book';
+};
 
 export default function Home() {
   return (
@@ -83,8 +89,29 @@ export default function Home() {
   <div className="flex justify-center">
     <Image src={img2} width={400} height={600} alt="Lila Lodge" className="rounded-lg shadow-lg object-cover" />
   </div>
-</div>     
+</div> 
+    
         </div>
+        <div
+  className="relative text-white text-center py-20 bg-cover bg-center bg-no-repeat min-h-[600px]" // Adjusted height
+  style={{
+    backgroundImage: `url(${img3.src})`,
+  }}
+>
+  {/* Overlay for transparency */}
+  <div className="absolute inset-0 bg-black opacity-50"></div>
+  
+  {/* Content */}
+  <div className="relative z-10">
+    <h1 className="text-4xl font-bold">Book Your Stay Today</h1>
+    <p className="text-lg mt-4 max-w-2xl mx-auto">
+      Discover the hidden gem of Sri Lanka’s coastline. Let Lila Lodge Guest House be your home away from home in paradise.
+    </p>
+    <button onClick={handleBookNow}  className="mt-6 px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition duration-300">
+      Book Now
+    </button>
+  </div>
+</div>
     </div>
   );
 }
