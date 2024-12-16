@@ -1,7 +1,12 @@
+import GalleryNav from "../components/GalleryNav";
+
 export default function page(){
     return(
-        <div>
-            This is Gallery
+        <div className="">
+            <GalleryNav />
+           
+
+            
 
         </div>
     );

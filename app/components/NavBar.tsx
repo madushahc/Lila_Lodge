@@ -21,18 +21,11 @@ export default function NavBar() {
           {/* Logo Section */}
           <div className="flex">
             <div className="flex items-center flex-shrink-0 flex-initial">
-              <Image
-                src={img}
-                alt="logo"
-                width={54}
-                height={54}
-                priority={true}
-              />
-              <a href="/" >
+              <a href="/" ></a>
               <p className='text-white font-bold text-3xl pb-6 ml-2'>
                     Lila<span className='text-purple-600'>Lodge</span>
               </p>               
-              </a>
+              
             </div>
           </div>
           {/* Desktop Navigation */}
