@@ -40,44 +40,44 @@ export default function Page() {
       <GalleryNav />
       
       {/* Large Image Display */}
-      <div className="flex justify-center items-center mt-6 mb-6">
+
+      <div className="flex justify-center items-center mt-6 mb-6 px-4">
+
         <Image
           src={selectedImage.src}
           width={1000}
           height={500}
           alt={selectedImage.alt}
-          className="rounded-lg shadow-lg transition-transform transform hover:scale-105"
+
+          className="w-full max-w-[1000px] h-auto rounded-lg shadow-lg transition-transform transform hover:scale-105"
         />
       </div>
       
-      {/* Small Images - Scrollable */}
-      <div className="flex justify-center gap-3 px-6 scrollbar-thin scrollbar-thumb-purple-500 scrollbar-track-gray-200 mb-5 h-auto">
-  {images.map((image, index) => (
-    <div
-      key={index}
-      className={`flex-none w-[150px] h-[100px] relative cursor-pointer ${
-        selectedImage.src === image.src
-          ? "ring-4 ring-purple-500 scale-105 rounded-md"
-          : "ring-2 ring-gray-200"
-      } hover:ring-purple-500 transition-all transform hover:scale-110`}
-      onClick={() => {
-        setSelectedImage(image);
-        setCurrentIndex(index);
-      }}
-    >
-      <Image
-        src={image.src}
-        width={150}
-        height={100}
-        alt={image.alt}
-        className="rounded-md shadow-md hover:shadow-lg"
-      />
-      {selectedImage.src === image.src && (
-        <div className="absolute inset-0 bg-purple-500 bg-opacity-20 rounded-md pointer-events-none" />
-      )}
-    </div>
-  ))}
-</div>
+      {/* Small Images - Wrapping Layout */}
+      <div className="flex flex-wrap justify-center gap-4 px-4 mb-6">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`w-[100px] h-[75px] sm:w-[150px] sm:h-[100px] relative cursor-pointer ${
+              selectedImage.src === image.src
+                ? "ring-4 ring-purple-500 scale-105 rounded-md"
+                : "ring-2 ring-gray-200"
+            } hover:ring-purple-500 transition-all transform hover:scale-110`}
+            onClick={() => {
+              setSelectedImage(image);
+              setCurrentIndex(index);
+            }}
+          >
+            <Image
+              src={image.src}
+              width={150}
+              height={100}
+              alt={image.alt}
+              className="w-full h-full rounded-md shadow-md hover:shadow-lg object-cover"
+            />
+          </div>
+        ))}
+      </div>
 
     </div>
   );
