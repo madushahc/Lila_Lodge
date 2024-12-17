@@ -5,6 +5,8 @@ import {FaWhatsapp } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { GrLocation } from "react-icons/gr";
 import { FiPhone } from "react-icons/fi";
+import { navLink } from '@/constant/constant';
+import Link from 'next/link';
 
 function Footer() {
   return (

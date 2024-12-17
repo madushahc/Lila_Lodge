@@ -15,17 +15,24 @@ export default function NavBar() {
     setClick(!isClick);
   };
   return (
-    <nav className="bg-purple-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="bg-purple-900 transition-all duration-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-[90%] xl:w-[90%] mx-auto ">
         <div className="flex items-center justify-between h-16 ">
           {/* Logo Section */}
+
           <div className="flex">
             <div className="flex items-center flex-shrink-0 flex-initial">
-              <a href="/" ></a>
-              <p className='text-white font-bold text-3xl pb-6 ml-2'>
-                    Lila<span className='text-purple-600'>Lodge</span>
-              </p>               
-              
+              <Image
+                src={img}
+                alt="logo"
+                width={54}
+                height={54}
+                priority={true}
+              />
+              <a href="/" className="text-white text-xl font-bold ml-2">
+                Lila Lodge
+              </a>
+
             </div>
           </div>
           {/* Desktop Navigation */}
