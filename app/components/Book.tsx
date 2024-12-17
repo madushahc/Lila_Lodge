@@ -31,7 +31,7 @@ export default function Book() {
 
   return (
     <div className="p-10">
-      <div className="rounded-xl shadow-xl flex flex-col md:flex-row justify-between bg-purple-200">
+      <div className="rounded-xl shadow-xl flex flex-col md:flex-row justify-between px-8 px-x-12 py-12 bg-purple-200">
         {/* Contact Form */}
         <form
           ref={form}
