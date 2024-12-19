@@ -1,13 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image"; 
-import Img1 from "../../app/public/_O4A8162.jpg";
+import Img1 from "../../app/public/_O4A8382.jpg";
 import Img2 from "../../app/public/_O4A8187.jpg";
-import Img3 from "../../app/public/_O4A8193.jpg";
+import Img3 from "../../app/public/_O4A8437.jpg";
 import Img4 from "../../app/public/_O4A8217.jpg";
 import Img5 from "../../app/public/_O4A8252.jpg";
 import Img6 from "../../app/public/_O4A8284.jpg";
-import Img7 from "../../app/public/_O4A8382.jpg";
+import Img7 from "../../app/public/_O4A8709.jpg";
 const images = [
   { src: Img1, alt: "Image 1" },
   { src: Img2, alt: "Image 2" },
@@ -34,6 +34,8 @@ export default function Page() {
   }, [currentIndex]);
 
   return (
+    <div>
+      
     <div className="bg-gray-50 min-h-screen">
             
       {/* Large Image Display */}
@@ -72,6 +74,7 @@ export default function Page() {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 }

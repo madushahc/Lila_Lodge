@@ -12,7 +12,7 @@ export const navLink = [
     {
         id:3,
         url:'/Services',
-        lable:'Service'
+        lable:'Services & Excursions'
     },
     {
         id:4,

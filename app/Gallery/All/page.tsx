@@ -2,14 +2,14 @@
 import { useState, useEffect } from "react";
 import GalleryNav from "@/app/components/GalleryNav";
 import Image from "next/image"; 
-import Img1 from "../../public/_O4A8162.jpg";
+import Img1 from "../../public/_O4A8382.jpg";
 import Img2 from "../../public/_O4A8187.jpg";
-import Img3 from "../../public/_O4A8193.jpg";
+import Img3 from "../../public/_O4A8437.jpg";
 import Img4 from "../../public/_O4A8217.jpg";
 import Img5 from "../../public/_O4A8252.jpg";
 import Img6 from "../../public/_O4A8284.jpg";
-import Img7 from "../../public/_O4A8382.jpg";
-
+import Img7 from "../../public/_O4A8709.jpg";
+import Img8 from "../../public/_O4A8709.jpg";
 const images = [
   { src: Img1, alt: "Image 1" },
   { src: Img2, alt: "Image 2" },
@@ -36,6 +36,16 @@ export default function Page() {
   }, [currentIndex]);
 
   return (
+    <div>
+      <div className="relative w-full h-[71vh] sm:h-[70vh]">
+      {/* Overlay */}
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-10"></div>
+      <Image 
+        src={Img8} 
+        alt="Hero Image" 
+        className="w-full h-full object-cover z-0" 
+        layout="fill"
+      /></div>
     <div className="bg-gray-50 min-h-screen">
       <GalleryNav />
       
@@ -78,7 +88,7 @@ export default function Page() {
           </div>
         ))}
       </div>
-
+      </div>
     </div>
   );
 }
