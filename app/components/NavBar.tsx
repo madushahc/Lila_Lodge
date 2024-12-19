@@ -16,7 +16,7 @@ export default function NavBar() {
   };
   return (
     <nav className="bg-purple-900 transition-all duration-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-[90%] xl:w-[90%] mx-auto ">
+      <div className="max-w-7xl px-4 sm:px-6 lg:px-8 w-[90%] xl:w-[90%] mx-auto ">
         <div className="flex items-center justify-between h-16 ">
           {/* Logo Section */}
 
@@ -32,13 +32,15 @@ export default function NavBar() {
               <a href="/" className="text-white text-xl font-bold ml-2">
                 Lila Lodge
               </a>
-
             </div>
           </div>
           {/* Desktop Navigation */}
           <div className="hidden md:block ">
             <div className="ml-4 flex items-center space-x-4">
-              <a href="/" className="text-white hover:bg-white hover:text-black rounded-lg p-2">
+              <a
+                href="/"
+                className="text-white hover:bg-white hover:text-black rounded-lg p-2"
+              >
                 Home
               </a>
               <a
@@ -53,7 +55,7 @@ export default function NavBar() {
               >
                 Services
               </a>
-              
+
               <a
                 href="/Gallery"
                 className="text-white hover:bg-white hover:text-black rounded-lg p-2"
