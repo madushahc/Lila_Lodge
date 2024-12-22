@@ -3,7 +3,7 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import Image from "next/image";
-import Img8 from "../public/11144.jpg";
+import Img8 from "../public/benthota.jpg";
 export default function Book() {
   const form = useRef<HTMLFormElement>(null);
 

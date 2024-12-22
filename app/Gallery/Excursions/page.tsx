@@ -6,9 +6,9 @@ import Img1 from "../../public/2563.jpg";
 import Img2 from "../../public/53658.jpg";
 import Img3 from "../../public/7468418.jpg";
 import Img4 from "../../public/844894.jpg";
-import Img5 from "../../public/_O4A8252.jpg";
-import Img6 from "../../public/_O4A8284.jpg";
-import Img7 from "../../public/_O4A8382.jpg";
+import Img5 from "../../public/Kandy.jpg";
+import Img6 from "../../public/safari.jpg";
+import Img7 from "../../public/Fishing.jpg";
 import Img8 from "../../public/_O4A8699.jpg";
 
 const images = [
