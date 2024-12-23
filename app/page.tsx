@@ -1,30 +1,28 @@
 "use client";
-import Image from "next/image";
-import img1 from "./public/_O4A8549.jpg";
-import img2 from "./public/_O4A8549.jpg";
-import Hero from "./components/Hero/Hero";
-import img3 from "./public/_O4A8709.jpg";
-const handleBookNow = () => {
-  // Navigate to form.tsx using window.location
-  window.location.href = "/Book";
-};
 
+import Image from "next/image";
 import { FaMapMarkerAlt, FaTree, FaBed, FaHeart } from "react-icons/fa";
+import Hero from "./components/Hero/Hero";
+import img1 from "./public/_O4A8549.jpg";
+import img3 from "./public/_O4A8709.jpg";
+
+// Book Now handler
+const handleBookNow = () => {
+  if (typeof window !== "undefined") {
+    window.location.href = "/Book";
+  }
+};
 
 export default function Home() {
   return (
     <div className="bg-gray-50 min-h-screen overflow-hidden">
-      <Hero></Hero>
+      <Hero />
       <div className="container mx-auto px-4 py-6">
         {/* Hero Section */}
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-          {/* Image */}
-
-          {/* Text Content */}
           <div className="text-center md:text-left space-y-4">
             <h1 className="text-4xl font-bold text-gray-800 leading-tight">
-              Ayubowan !<br></br> Welcome to Lila Lodge, Bentota
+              Ayubowan! <br /> Welcome to Lila Lodge, Bentota
             </h1>
             <h2 className="text-2xl text-gray-600">
               Bentota’s Hidden Paradise!
@@ -48,71 +46,52 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Why Choose Lila Lodge Section */}
+        {/* Why Choose Section */}
         <div className="mt-12 bg-white p-8 rounded-lg shadow-xl">
           <h1 className="pb-3 text-3xl font-bold text-center text-gray-800 mb-6">
             Why Choose Lila Lodge?
           </h1>
-
-          {/* Using Flexbox for layout */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Prime Location */}
-            <div className="flex flex-col text-center items-center space-x-4 bg-purple-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
+            <div className="flex flex-col items-center bg-purple-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
               <FaMapMarkerAlt className="text-3xl text-purple-500" />
-              <div>
-                <h4 className="pt-5 text-xl font-semibold text-gray-700 pb-2">
-                  Prime Location
-                </h4>
-                <p className="text-lg text-gray-600">
-                  Conveniently located just minutes from the beach and Bentota’s
-                  top attractions.
-                </p>
-              </div>
+              <h4 className="pt-5 text-xl font-semibold">Prime Location</h4>
+              <p className="text-lg text-gray-600">
+                Conveniently located just minutes from the beach and Bentota’s
+                top attractions.
+              </p>
             </div>
-
             {/* Natural Setting */}
-            <div className="flex flex-col text-center items-center space-x-4 bg-green-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
+            <div className="flex flex-col items-center bg-green-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
               <FaTree className="text-3xl text-green-500" />
-              <div>
-                <h4 className="pt-5 text-xl font-semibold text-gray-700 pb-2">
-                  Natural Setting
-                </h4>
-                <p className="text-lg text-gray-600">
-                  Wake up to the gentle melodies of birdsong and immerse
-                  yourself in the peaceful jungle ambiance.
-                </p>
-              </div>
+              <h4 className="pt-5 text-xl font-semibold">Natural Setting</h4>
+              <p className="text-lg text-gray-600">
+                Wake up to the gentle melodies of birdsong and immerse yourself
+                in the peaceful jungle ambiance.
+              </p>
             </div>
-
             {/* Authentic Comfort */}
-            <div className="flex flex-col text-center items-center space-x-4 bg-blue-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
+            <div className="flex flex-col items-center bg-blue-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
               <FaBed className="text-3xl text-blue-500" />
-              <div>
-                <h4 className="pt-5 text-xl font-semibold text-gray-700 pb-2">
-                  Authentic Comfort
-                </h4>
-                <p className="text-lg text-gray-600">
-                  Enjoy cozy, thoughtfully designed rooms crafted for your
-                  ultimate relaxation.
-                </p>
-              </div>
+              <h4 className="pt-5 text-xl font-semibold">Authentic Comfort</h4>
+              <p className="text-lg text-gray-600">
+                Enjoy cozy, thoughtfully designed rooms crafted for your
+                ultimate relaxation.
+              </p>
             </div>
-
             {/* Warm Hospitality */}
-            <div className="flex flex-col text-center items-center space-x-4 bg-red-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
+            <div className="flex flex-col items-center bg-red-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
               <FaHeart className="text-3xl text-red-500" />
-              <div>
-                <h4 className="pt-5 text-xl font-semibold text-gray-700 pb-2">
-                  Warm Hospitality
-                </h4>
-                <p className="text-lg text-gray-600">
-                  Experience personalized service that reflects the heartwarming
-                  spirit of Sri Lanka.
-                </p>
-              </div>
+              <h4 className="pt-5 text-xl font-semibold">Warm Hospitality</h4>
+              <p className="text-lg text-gray-600">
+                Experience personalized service that reflects the heartwarming
+                spirit of Sri Lanka.
+              </p>
             </div>
           </div>
         </div>
+
+        {/* Explore & Unwind Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center mt-10">
           <div className="text-center md:text-left space-y-4">
             <h1 className="text-4xl font-bold text-gray-800 leading-tight">
@@ -123,17 +102,11 @@ export default function Home() {
               rejuvenating dip in the ocean. Return to Lila Lodge to relax in
               our serene garden, surrounded by exotic flora and fauna, where
               every corner whispers tranquility.
-              <br />
-              Whether you're seeking thrilling adventures, blissful serenity, or
-              a perfect blend of both, Lila Lodge Guest House is your gateway to
-              creating unforgettable memories in Bentota.
             </p>
           </div>
-
-          {/* Image */}
           <div className="flex justify-center">
             <Image
-              src={img2}
+              src={img1}
               width={400}
               height={600}
               alt="Lila Lodge"
@@ -142,16 +115,15 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Call to Action Section */}
       <div
-        className="relative text-white text-center py-20 bg-cover bg-center bg-no-repeat min-h-[600px]" // Adjusted height
+        className="relative text-white text-center py-20 bg-cover bg-center min-h-[600px]"
         style={{
           backgroundImage: `url(${img3.src})`,
         }}
       >
-        {/* Overlay for transparency */}
         <div className="absolute inset-0 bg-black opacity-50"></div>
-
-        {/* Content */}
         <div className="relative z-10">
           <h1 className="text-4xl font-bold">Book Your Stay Today</h1>
           <p className="text-lg mt-4 max-w-2xl mx-auto">
