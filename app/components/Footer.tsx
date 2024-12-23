@@ -1,12 +1,16 @@
+"use client"; // This line marks the component as a Client Component
+
 import React from "react";
 import { FaInstagram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { GrLocation } from "react-icons/gr";
 import { FiPhone } from "react-icons/fi";
-import { navLink } from "@/constant/constant";
-import Link from "next/link";
+
+const handleBookNow = () => {
+  // Navigate to form.tsx using window.location
+  window.location.href = "/Book";
+};
 
 function Footer() {
   return (
@@ -18,7 +22,7 @@ function Footer() {
               Lila<span className="text-purple-600">Lodge</span>
             </p>
             <div className="flex gap-6 pb-5">
-              {/*icons*/}
+              {/* icons */}
               <FaInstagram className="text-2xl text-white cursor-pointer hover:text-purple-600" />
               <FaFacebook className="text-2xl text-white cursor-pointer hover:text-purple-600" />
               <FaWhatsapp className="text-2xl text-white cursor-pointer hover:text-purple-600" />
@@ -28,7 +32,6 @@ function Footer() {
         <div className="p-5">
           <ul>
             <a href="/">
-              {" "}
               <li className="text-white text-md pb-2 fint-bold hover:text-purple-600 cursor-pointer">
                 Home
               </li>
@@ -55,7 +58,14 @@ function Footer() {
             </a>
           </ul>
         </div>
-
+        <div>
+          <button
+            onClick={handleBookNow}
+            className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition duration-300"
+          >
+            Book Now
+          </button>
+        </div>
         <div className="p-5">
           <ul>
             <li className="text-white text-md pb-2 fint-bold hover:text-purple-600 cursor-pointer flex md:flex-row">
@@ -77,8 +87,7 @@ function Footer() {
         <hr className="pb-10 text-white"></hr>
         <div className="text-white h-1/2 w-full flex md:flex-row flex-col justify-around items-start pb-5">
           <h1 className="font-semibold">
-            {" "}
-            Copyright © 2024 - Lila Villa Bentota - All Rights Reserved.{" "}
+            Copyright © 2024 - Lila Villa Bentota - All Rights Reserved.
           </h1>
         </div>
       </div>
