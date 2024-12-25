@@ -1,7 +1,5 @@
 "use client"; // This line marks the component as a Client Component
-
 import React from "react";
-import { FaInstagram } from "react-icons/fa";
 import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { GrLocation } from "react-icons/gr";

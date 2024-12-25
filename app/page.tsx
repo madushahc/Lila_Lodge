@@ -5,7 +5,7 @@ import { FaMapMarkerAlt, FaTree, FaBed, FaHeart } from "react-icons/fa";
 import Hero from "./components/Hero/Hero";
 import img1 from "./public/_O4A8549.jpg";
 import img3 from "./public/_O4A8709.jpg";
-
+import img5 from "./public/water based.jpg";
 // Book Now handler
 const handleBookNow = () => {
   if (typeof window !== "undefined") {
@@ -20,7 +20,7 @@ export default function Home() {
       <div className="container mx-auto px-4 py-6">
         {/* Hero Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-          <div className="text-center md:text-left space-y-4">
+          <div className="text-center md:text-left space-y-4 lg:m-32">
             <h1 className="text-4xl font-bold text-gray-800 leading-tight">
               Ayubowan! <br /> Welcome to Lila Lodge, Bentota
             </h1>
@@ -47,7 +47,7 @@ export default function Home() {
         </div>
 
         {/* Why Choose Section */}
-        <div className="mt-12 bg-white p-8 rounded-lg shadow-xl">
+        <div className="mt-12 bg-white p-8 rounded-lg shadow-xl ">
           <h1 className="pb-3 text-3xl font-bold text-center text-gray-800 mb-6">
             Why Choose Lila Lodge?
           </h1>
@@ -93,7 +93,7 @@ export default function Home() {
 
         {/* Explore & Unwind Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center mt-10">
-          <div className="text-center md:text-left space-y-4">
+          <div className="text-center md:text-left space-y-4 lg:m-32">
             <h1 className="text-4xl font-bold text-gray-800 leading-tight">
               Explore & Unwind
             </h1>
@@ -106,7 +106,7 @@ export default function Home() {
           </div>
           <div className="flex justify-center">
             <Image
-              src={img1}
+              src={img5}
               width={400}
               height={600}
               alt="Lila Lodge"

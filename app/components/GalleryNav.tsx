@@ -12,7 +12,11 @@ export default function GalleryNav() {
       <Link
         href="/Gallery/All"
         className={`text-gray-800 font-semibold transition-colors duration-300 
-          ${isActive('/Gallery/All') ? 'text-purple-600 underline' : 'hover:text-purple-600'} 
+          ${
+            isActive("/Gallery/All")
+              ? "text-purple-600 underline"
+              : "hover:text-purple-600"
+          } 
           hover:underline-offset-4`}
       >
         All
@@ -20,7 +24,11 @@ export default function GalleryNav() {
       <Link
         href="/Gallery/Dining"
         className={`text-gray-800 font-semibold transition-colors duration-300 
-          ${isActive('/Gallery/Dining') ? 'text-purple-600 underline' : 'hover:text-purple-600'} 
+          ${
+            isActive("/Gallery/Dining")
+              ? "text-purple-600 underline"
+              : "hover:text-purple-600"
+          } 
           hover:underline-offset-4`}
       >
         Dining
@@ -28,7 +36,11 @@ export default function GalleryNav() {
       <Link
         href="/Gallery/Accommodation"
         className={`text-gray-800 font-semibold transition-colors duration-300 
-          ${isActive('/Gallery/Accommodation') ? 'text-purple-600 underline' : 'hover:text-purple-600'} 
+          ${
+            isActive("/Gallery/Accommodation")
+              ? "text-purple-600 underline"
+              : "hover:text-purple-600"
+          } 
           hover:underline-offset-4`}
       >
         Accommodation
@@ -36,7 +48,11 @@ export default function GalleryNav() {
       <Link
         href="/Gallery/Excursions"
         className={`text-gray-800 font-semibold transition-colors duration-300 
-          ${isActive('/Gallery/Excursions') ? 'text-purple-600 underline' : 'hover:text-purple-600'} 
+          ${
+            isActive("/Gallery/Excursions")
+              ? "text-purple-600 underline"
+              : "hover:text-purple-600"
+          } 
           hover:underline-offset-4`}
       >
         Excursions
@@ -44,4 +60,3 @@ export default function GalleryNav() {
     </div>
   );
 }
-
