@@ -89,7 +89,7 @@ export default function Page() {
           layout="fill"
         />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center lg:m-28">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center m-3 lg:m-28">
         <div className="text-center md:text-left space-y-4">
           <h1 className="lg:text-5xl text-4xl font-bold text-gray-800 leading-tight">
             A unique distinctive lifestyle like no other!
@@ -155,7 +155,7 @@ export default function Page() {
         </div>
 
         {/* Interactive Data Box */}
-        <div className="absolute -bottom-20 right-0 bg-white p-3 shadow-lg rounded-lg z-50 max-w-md w-[650px] h-[180px] flex flex-col justify-between transform scale-95 hover:scale-100 transition-transform duration-300 ease-in-out">
+        <div className="absolute -bottom-20 right-0 bg-white p-3 shadow-lg rounded-lg z-50 max-w-md w-[600px] h-[180px] flex flex-col justify-between transform scale-95 hover:scale-100 transition-transform duration-300 ease-in-out">
           <div className="flex-1">
             <h3 className="text-xl font-bold text-gray-800 mb-3">
               Deluxe Double Room
@@ -235,7 +235,7 @@ export default function Page() {
         </div>
 
         {/* Interactive Data Box */}
-        <div className="absolute -bottom-20 right-0 bg-white p-3 shadow-lg rounded-lg z-50 max-w-md w-[650px] h-[180px] flex flex-col justify-between transform scale-95 hover:scale-100 transition-transform duration-300 ease-in-out">
+        <div className="absolute -bottom-20 right-0 bg-white p-3 shadow-lg rounded-lg z-50 max-w-md w-[600px] h-[180px] flex flex-col justify-between transform scale-95 hover:scale-100 transition-transform duration-300 ease-in-out">
           <div className="flex-1">
             <h3 className="text-xl font-bold text-gray-800 mb-3">
               Deluxe Family Room
