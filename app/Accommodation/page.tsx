@@ -89,7 +89,7 @@ export default function Page() {
           layout="fill"
         />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center m-28">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center lg:m-28">
         <div className="text-center md:text-left space-y-4">
           <h1 className="lg:text-5xl text-4xl font-bold text-gray-800 leading-tight">
             A unique distinctive lifestyle like no other!
