@@ -21,9 +21,15 @@ function Footer() {
             </p>
             <div className="flex gap-6 pb-5">
               {/* icons */}
-              <FaInstagram className="text-2xl text-white cursor-pointer hover:text-purple-600" />
-              <FaFacebook className="text-2xl text-white cursor-pointer hover:text-purple-600" />
-              <FaWhatsapp className="text-2xl text-white cursor-pointer hover:text-purple-600" />
+              <a href="">
+                <FaInstagram className="text-2xl text-white cursor-pointer hover:text-purple-600" />
+              </a>
+              <a href="https://www.facebook.com/share/14bX29WAWi/?mibextid=wwXIfr">
+                <FaFacebook className="text-2xl text-white cursor-pointer hover:text-purple-600" />
+              </a>
+              <a href="https://wa.me/+94714241951" target="_blank">
+                <FaWhatsapp className="text-2xl text-white cursor-pointer hover:text-purple-600" />
+              </a>
             </div>
           </ul>
         </div>
@@ -68,15 +74,20 @@ function Footer() {
           <ul>
             <li className="text-white text-md pb-2 fint-bold hover:text-purple-600 cursor-pointer flex md:flex-row">
               <GrLocation className="text-2xl cursor-pointer hover:text-purple-600" />
-              <span className="pr-4"></span>No.138/15, Galle Road, Bentota
+              <a href="https://maps.app.goo.gl/BehUfpbpihgVqTaz7">
+                <span className="pr-4"></span>Lila Lodge, Kadiyangoda Road,
+                Bentota
+              </a>
             </li>
             <li className="text-white text-md pb-2 fint-bold hover:text-purple-600 cursor-pointer flex md:flex-row pt-2">
               <FiPhone className="text-2xl cursor-pointer hover:text-purple-600" />
-              <span className="pr-4"></span>+94 762222222
+              <span className="pr-4"></span>
+              <a href="tel:+94714241951">+94 71 424 1951</a>
             </li>
             <li className="text-white text-md pb-2 fint-bold hover:text-purple-600 cursor-pointer flex md:flex-row pt-2">
               <MdOutlineEmail className="text-2xl cursor-pointer hover:text-purple-600" />
-              <span className="pr-4"></span>email@gmail.com
+              <span className="pr-4"></span>
+              lilalodgebentota@gmail.com
             </li>
           </ul>
         </div>
