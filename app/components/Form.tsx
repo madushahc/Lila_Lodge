@@ -1,7 +1,7 @@
 "use client";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
-import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
 
 export default function Form() {
   const form = useRef<HTMLFormElement>(null);
@@ -38,7 +38,7 @@ export default function Form() {
           <h1 className="text-4xl font-semibold">Contact Us</h1>
           <div>
             <h3 className="text-lg font-medium">Address:</h3>
-            <p>No.138/15, Galle Road, Bentota, Sri Lanka</p>
+            <p>Lila Lodge, Kadiyangoda Road, Bentota</p>
           </div>
           <div>
             <h3 className="text-lg font-medium">Email:</h3>
@@ -46,18 +46,32 @@ export default function Form() {
           </div>
           <div>
             <h3 className="text-lg font-medium">Whatsapp:</h3>
-            <p>+94 714 241 951 | +44 7485 060 543</p>
+            <a href="https://wa.me/+94714241951" target="_blank">
+              +94 714 241 951 |
+            </a>
+
+            <a
+              className=" pl-2"
+              href="https://wa.me/+447485060543"
+              target="_blank"
+            >
+              +44 7485 060 543
+            </a>
           </div>
           <div>
-            <h3 className="text-lg font-medium">Phone:</h3>
-            <p>+94 714 241 591</p>
+            <h3 className="text-lg font-medium ">Phone:</h3>
+            <a href="tel:+94714241951"> +94 71 424 1951</a>
           </div>
           {/* Social Icons */}
           <div className="flex items-center space-x-6 pt-5">
             <span className="font-bold">Follow us on:</span>
             <FaInstagram className="text-2xl text-black cursor-pointer hover:text-purple-600" />
-            <FaFacebook className="text-2xl text-black cursor-pointer hover:text-purple-600" />
-            <FaTwitter className="text-2xl text-black cursor-pointer hover:text-purple-600" />
+            <a href="https://www.facebook.com/share/14bX29WAWi/?mibextid=wwXIfr">
+              <FaFacebook className="text-2xl text-black cursor-pointer hover:text-purple-600" />
+            </a>
+            <a href="https://wa.me/+94714241951" target="_blank">
+              <FaWhatsapp className="text-2xl text-black cursor-pointer hover:text-purple-600" />
+            </a>
           </div>
         </div>
 
@@ -356,7 +370,7 @@ export default function Form() {
         <div className="p-5">
           <iframe
             className="rounded-xl w-full max-w-[1000px] h-[400px] md:w-[1000px] md:h-[600px]"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.792671221893!2d80.0022065!3d6.420679799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae22e9bd916d201%3A0x853fe2fd18c9417b!2s138%2C%2015%20Galle%20Rd%2C%20Bentota!5e0!3m2!1sen!2slk!4v1734271238691!5m2!1sen!2slk"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7929.593765013944!2d80.0119150843243!3d6.42013897925796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae22d8712a6f7f9%3A0xa2df7410dca18ad4!2sLila%20Lodge%20-%20Bentota!5e0!3m2!1sen!2slk!4v1735270835364!5m2!1sen!2slk"
           ></iframe>
         </div>
       </div>
