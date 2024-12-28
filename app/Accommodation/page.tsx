@@ -155,12 +155,12 @@ export default function Page() {
         </div>
 
         {/* Interactive Data Box */}
-        <div className="absolute -bottom-20 right-0 bg-white p-3 shadow-lg rounded-lg z-50 max-w-md w-[600px] h-[180px] flex flex-col justify-between transform scale-95 hover:scale-100 transition-transform duration-300 ease-in-out">
+        <div className="absolute -bottom-20 right-0 bg-white p-3 shadow-lg rounded-lg z-50 max-w-full sm:max-w-md w-full sm:w-[600px] h-[180px] flex flex-col justify-between transform scale-95 hover:scale-100 transition-transform duration-300 ease-in-out">
           <div className="flex-1">
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3">
               Deluxe Double Room
             </h3>
-            <p className="text-sm text-gray-600">
+            <p className="text-sm sm:text-base text-gray-600">
               Can you share Family room Bed Room photos separately to identify,
               Double room Photos separately to identify.
             </p>
@@ -235,12 +235,12 @@ export default function Page() {
         </div>
 
         {/* Interactive Data Box */}
-        <div className="absolute -bottom-20 right-0 bg-white p-3 shadow-lg rounded-lg z-50 max-w-md w-[600px] h-[180px] flex flex-col justify-between transform scale-95 hover:scale-100 transition-transform duration-300 ease-in-out">
+        <div className="absolute -bottom-20 right-0 bg-white p-3 shadow-lg rounded-lg z-50 max-w-full sm:max-w-md w-full sm:w-[600px] h-[180px] flex flex-col justify-between transform scale-95 hover:scale-100 transition-transform duration-300 ease-in-out">
           <div className="flex-1">
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3">
               Deluxe Family Room
             </h3>
-            <p className="text-sm text-gray-600">
+            <p className="text-sm sm:text-base text-gray-600">
               Can you share Family room Bed Room photos separately to identify,
               Double room Photos separately to identify.
             </p>
