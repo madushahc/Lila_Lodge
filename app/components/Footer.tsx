@@ -72,22 +72,23 @@ function Footer() {
         </div>
         <div className="p-5">
           <ul>
-            <li className="text-white text-md pb-2 fint-bold hover:text-purple-600 cursor-pointer flex md:flex-row">
-              <GrLocation className="text-2xl cursor-pointer hover:text-purple-600" />
-              <a href="https://maps.app.goo.gl/BehUfpbpihgVqTaz7">
-                <span className="pr-4"></span>Lila Lodge, Kadiyangoda Road,
-                Bentota
+            <li className="text-white text-md pb-2 font-bold hover:text-purple-600 cursor-pointer flex flex-col md:flex-row items-start md:items-center">
+              <GrLocation className="text-2xl cursor-pointer hover:text-purple-600 mr-2" />
+              <a href="https://maps.app.goo.gl/BehUfpbpihgVqTaz7" className="">
+                Lila Lodge, Kadiyangoda Road, Bentota
               </a>
             </li>
-            <li className="text-white text-md pb-2 fint-bold hover:text-purple-600 cursor-pointer flex md:flex-row pt-2">
-              <FiPhone className="text-2xl cursor-pointer hover:text-purple-600" />
-              <span className="pr-4"></span>
-              <a href="tel:+94714241951">+94 71 424 1951</a>
+            <li className="text-white text-md pb-2 font-bold hover:text-purple-600 cursor-pointer flex flex-col md:flex-row items-start md:items-center pt-2">
+              <FiPhone className="text-2xl cursor-pointer hover:text-purple-600 mr-2" />
+              <a href="tel:+94714241951" className="">
+                +94 71 424 1951
+              </a>
             </li>
-            <li className="text-white text-md pb-2 fint-bold hover:text-purple-600 cursor-pointer flex md:flex-row pt-2">
-              <MdOutlineEmail className="text-2xl cursor-pointer hover:text-purple-600" />
-              <span className="pr-4"></span>
-              lilalodgebentota@gmail.com | antheagrussell22@icloud.com
+            <li className="text-white text-md pb-2 font-bold hover:text-purple-600 cursor-pointer flex flex-col md:flex-row items-start md:items-center pt-2">
+              <MdOutlineEmail className="text-2xl cursor-pointer hover:text-purple-600 mr-2" />
+              <span>
+                lilalodgebentota@gmail.com | antheagrussell22@icloud.com
+              </span>
             </li>
           </ul>
         </div>
