@@ -125,7 +125,7 @@ export default function Page() {
       </div>
 
       {/* Thumbnails (scrollable) */}
-      <div className="overflow-x-auto space-x-4 px-4 mb-6 hidden md:flex">
+      <div className="overflow-x-auto space-x-4 px-4 mb-6 hidden lg:flex">
         {imagesd.map((image, index) => (
           <div key={index} className="w-[350px] h-[300px] relative">
             <Image
@@ -141,24 +141,28 @@ export default function Page() {
 
       {/* Current Image (Visible on mobile) */}
       <div className="flex justify-center items-center mt-6 mb-6 px-4 relative">
+        {/* Previous Image Button - Visible on mobile and tablet, hidden on larger screens */}
         <button
           onClick={moveToPreviousImage}
           aria-label="Previous Image"
-          className="absolute left-0 z-20 text-white text-3xl p-2 bg-black rounded-full hover:bg-gray-700 sm:hidden md:hidden"
+          className="absolute left-0 z-20 text-white text-3xl p-2 bg-black rounded-full hover:bg-gray-700 sm:block md:block lg:hidden"
         >
           <FaArrowLeft />
         </button>
 
+        {/* Image - Visible on mobile and tablet, hidden on larger screens */}
         <Image
           src={imagesd[currentIndex]}
           width={1000}
           height={500}
           alt={`Image ${currentIndex + 1}`}
-          className="w-full max-w-[1000px] h-auto rounded-lg shadow-lg transition-transform transform hover:scale-105 sm:hidden"
+          className="w-full max-w-[1000px] h-auto rounded-lg shadow-lg transition-transform transform hover:scale-105 sm:block md:block lg:hidden"
         />
+
+        {/* Next Image Button - Visible on mobile and tablet, hidden on larger screens */}
         <button
           onClick={moveToNextImage}
-          className="absolute right-0 z-20 text-white text-3xl p-2 bg-black rounded-full hover:bg-gray-700 sm:hidden"
+          className="absolute right-0 z-20 text-white text-3xl p-2 bg-black rounded-full hover:bg-gray-700 sm:block md:block lg:hidden"
         >
           <FaArrowRight />
         </button>

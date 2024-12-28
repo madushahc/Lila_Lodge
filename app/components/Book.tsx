@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import Image from "next/image";
 import Img8 from "../public/benthota.jpg";
+import img5 from "../public/kande Viharaya.jpg";
 export default function Book() {
   const form = useRef<HTMLFormElement>(null);
 
@@ -48,6 +49,13 @@ export default function Book() {
       <div className="p-10">
         <div className="rounded-xl shadow-xl flex flex-col md:flex-row justify-between px-8 py-12 bg-purple-100">
           {/* Contact Form */}
+          <div className="w-full md:w-1/2">
+            <Image
+              src={img5}
+              alt="Kande Viharaya"
+              className="w-auto h-full object-cover rounded-lg"
+            />
+          </div>
           <form
             ref={form}
             onSubmit={sendEmail}

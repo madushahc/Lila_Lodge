@@ -1,7 +1,7 @@
 import Form from "../components/Form";
 import Image from "next/image";
 import React from "react";
-import Img8 from "../public/_O4A8162.jpg";
+import Img8 from "../public/contact image.jpg";
 
 export default function page() {
   return (

@@ -1,16 +1,48 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FaMapMarkerAlt, FaTree, FaBed, FaHeart } from "react-icons/fa";
 import Hero from "./components/Hero/Hero";
 import img1 from "./public/_O4A8549.jpg";
 import img3 from "./public/_O4A8709.jpg";
 import img5 from "./public/water based.jpg";
+import img6 from "./public/tea.jpg";
+import img7 from "./public/out.jpg";
+import img8 from "./public/eve.jpg";
+import img9 from "./public/Ele.jpg";
+
 // Book Now handler
 const handleBookNow = () => {
   if (typeof window !== "undefined") {
     window.location.href = "/Book";
   }
+};
+
+const images = [img5, img6, img7, img8, img9];
+
+const ImageCarousel = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 2000); // Change image every 2 seconds
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, [images.length]);
+
+  return (
+    <div className="flex justify-center">
+      <Image
+        src={images[currentImageIndex]}
+        width={400}
+        height={600}
+        alt="Lila Lodge"
+        className="rounded-lg shadow-lg object-cover"
+      />
+    </div>
+  );
 };
 
 export default function Home() {
@@ -20,7 +52,7 @@ export default function Home() {
       <div className="container mx-auto px-4 py-6">
         {/* Hero Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center ">
-          <div className=" transition ease-linear text-center md:text-left space-y-4 lg:m-32">
+          <div className="transition ease-linear text-center md:text-left space-y-4 lg:m-32">
             <h1 className="text-4xl font-bold text-gray-800 leading-tight">
               Ayubowan! <br /> Welcome to Lila Lodge, Bentota
             </h1>
@@ -45,7 +77,6 @@ export default function Home() {
             />
           </div>
         </div>
-
         {/* Why Choose Section */}
         <div className="mt-12 bg-white p-8 rounded-lg shadow-xl ">
           <h1 className="pb-3 text-3xl font-bold text-center text-gray-800 mb-6">
@@ -92,7 +123,7 @@ export default function Home() {
         </div>
 
         {/* Explore & Unwind Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center mt-10 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center mt-10">
           <div className="text-center md:text-left space-y-4 lg:m-32">
             <h1 className="text-4xl font-bold text-gray-800 leading-tight">
               Explore & Unwind
@@ -104,15 +135,7 @@ export default function Home() {
               every corner whispers tranquility.
             </p>
           </div>
-          <div className="flex justify-center">
-            <Image
-              src={img5}
-              width={400}
-              height={600}
-              alt="Lila Lodge"
-              className="rounded-lg shadow-lg object-cover"
-            />
-          </div>
+          <ImageCarousel />
         </div>
       </div>
 

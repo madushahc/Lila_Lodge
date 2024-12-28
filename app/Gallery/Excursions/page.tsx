@@ -9,7 +9,7 @@ import Img4 from "../../public/844894.jpg";
 import Img5 from "../../public/Kandy.jpg";
 import Img6 from "../../public/safari.jpg";
 import Img7 from "../../public/Fishing.jpg";
-import Img8 from "../../public/_O4A8699.jpg";
+import Img8 from "../../public/Ele.jpg";
 
 const images = [
   { src: Img1, alt: "Image 1" },
