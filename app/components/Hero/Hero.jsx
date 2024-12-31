@@ -13,6 +13,17 @@ const Hero = () => {
         className="w-full h-full object-cover z-0" 
         layout="fill"
       />
+<<<<<<< Updated upstream
+=======
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+        <button
+          onClick={handleBookNow}
+          className="mt-6 px-6 py-3 bg-purple-600 hover:bg-white hover:text-purple-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition duration-100"
+          >
+          Book Now
+        </button>
+      </div>
+>>>>>>> Stashed changes
     </div>
   );
 };

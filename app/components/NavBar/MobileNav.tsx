@@ -30,6 +30,7 @@ const navOpen = showNav?"translate-x-0" : "translate-x-[100%]";
             className='text-white w-fit text-[20px] ml-0 border-b-[1.5px] border-white sm:text-[30px] '>
               {link.lable}
             </p>
+<<<<<<< Updated upstream
           </Link>
         })}
               <div className='absolute top-[2rem] flex items-center space-x-2'>
@@ -47,6 +48,24 @@ const navOpen = showNav?"translate-x-0" : "translate-x-[100%]";
                   <FaWhatsapp className='text-3xl md:text-3xl text-white '/>
               </div>
               
+=======
+          </div>
+        </div>
+
+        <div className="absolute p-60 gap-6 flex">
+          {/*icons*/}
+          <a href="">
+            <FaInstagram className="text-3xl md:text-3xl text-white " />
+          </a>
+          <a href="https://www.facebook.com/share/14bX29WAWi/?mibextid=wwXIfr">
+            <FaFacebook className="text-3xl md:text-3xl text-white " />
+          </a>
+          <a href="https://wa.me/+94714241951" target="_blank">
+            <FaWhatsapp className="text-3xl md:text-3xl text-white " />
+          </a>
+        </div>
+
+>>>>>>> Stashed changes
         {/*Close Nav */}
       <CgClose onClick={closeNav} className='absolute top-[0.7rem] right-[1.4rem] sm:w-8 sm:h-8 w-6 h-6 '/>
       </div>
