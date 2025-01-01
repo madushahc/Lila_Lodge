@@ -21,6 +21,9 @@ export default {
       animation: {
         fadeIn: "fadeIn 0.8s ease-out forwards",
       },
+      fontFamily: {
+        Quicksand: ["Quicksand", "sans-serif"],
+      },
     },
   },
   plugins: [],

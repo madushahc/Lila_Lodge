@@ -1,3 +1,4 @@
+'use client';
 import Image from "next/image";
 import Img0 from "../public/adventure.jpg";
 import Img8 from "../public/7468418.jpg";
@@ -12,7 +13,7 @@ import Img10 from "../public/safari.jpg";
 import {motion} from "framer-motion";
 export default function Page() {
   return (
-    <div className="mb-3">
+    <div className="font-Quicksand mb-3">
       {/* Hero Section */}
       <div className="relative w-full h-[71vh] sm:h-[70vh]">
         {/* Overlay */}
@@ -26,14 +27,36 @@ export default function Page() {
       </div>
 
       {/* Heading */}
-      <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center mt-6">
+      <motion.h1
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{
+          delay: 0.2,
+          y: { type: "spring", stiffness: 60 },
+          opacity: { duration: 1 },
+          ease: "easeIn",
+          duration: 1,
+        }}
+      className="text-3xl font-bold text-gray-800 mb-6 text-center mt-6">
         Services & Excursions
-      </h1>
+      </motion.h1>
 
       {/* Cards Container */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-3  justify-center items-center">
         {/* Card 1 */}
-        <div className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg transform transition hover:scale-105 hover:shadow-2xl duration-300 bg-gradient-to-br from-white to-gray-100">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+          whileHover={{ scale: 1.02,transition: { duration: 0.3 } }}
+          animate={{ scale: 1, transition: { duration: 0.3 } }}
+        className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100">
           <Image
             className="w-full h-[300px] md:h-[400px] object-cover hover:opacity-90 transition duration-300"
             src={Img10}
@@ -65,10 +88,22 @@ export default function Page() {
               Explore nearby hatcheries dedicated to marine turtle conservation.
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/* Card 2 */}
-        <div className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg lg:mt-3 transform transition hover:scale-105 hover:shadow-2xl duration-300 bg-gradient-to-br from-white to-gray-100 ">
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+          whileHover={{ scale: 1.02,transition: { duration: 0.3 } }}
+          animate={{ scale: 1, transition: { duration: 0.3 } }}
+        className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg lg:mt-3 bg-gradient-to-br from-white to-gray-100 ">
           <Image
             className="w-full h-[300px] md:h-[400px] object-cover hover:opacity-90 transition duration-300"
             src={Img6} // Replace with the second card's image
@@ -100,10 +135,24 @@ export default function Page() {
               Enjoy guided fishing expeditions under the stars.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-3  justify-center items-center">
-        <div className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg transform transition hover:scale-105 hover:shadow-2xl duration-300 bg-gradient-to-br from-white to-gray-100">
+        {/* Card 3 */}
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+          whileHover={{ scale: 1.02,transition: { duration: 0.3 } }}
+          animate={{ scale: 1, transition: { duration: 0.3 } }}
+        className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100">
           <Image
             className="w-full h-[300px] md:h-[400px] object-cover hover:opacity-90 transition duration-300"
             src={Img9} // Replace with the second card's image
@@ -130,8 +179,22 @@ export default function Page() {
               statue and peaceful environment.
             </p>
           </div>
-        </div>
-        <div className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg transform transition hover:scale-105 hover:shadow-2xl duration-300 bg-gradient-to-br from-white to-gray-100">
+        </motion.div>
+
+        {/* Card 4 */}
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+          whileHover={{ scale: 1.02,transition: { duration: 0.3 } }}
+          animate={{ scale: 1, transition: { duration: 0.3 } }}
+        className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100">
           <Image
             className="w-full h-[300px] md:h-[400px] object-cover hover:opacity-90 transition duration-300"
             src={Img4} // Replace with the second card's image
@@ -158,10 +221,24 @@ export default function Page() {
               landscaping and sculptures.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-3  justify-center items-center">
-        <div className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg transform transition hover:scale-105 hover:shadow-2xl duration-300 bg-gradient-to-br from-white to-gray-100">
+        {/* Card 5 */}
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+          whileHover={{ scale: 1.02,transition: { duration: 0.3 } }}
+          animate={{ scale: 1, transition: { duration: 0.3 } }}
+        className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100">
           <Image
             className="w-full h-[300px] md:h-[400px] object-cover hover:opacity-90 transition duration-300"
             src={Img0} // Replace with the second card's image
@@ -180,8 +257,22 @@ export default function Page() {
               Experience stunning aerial views of Bentota’s coastline.
             </p>
           </div>
-        </div>
-        <div className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg transform transition hover:scale-105 hover:shadow-2xl duration-300 bg-gradient-to-br from-white to-gray-100">
+        </motion.div>
+
+        {/* Card 6 */}
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+          whileHover={{ scale: 1.02,transition: { duration: 0.3 } }}
+          animate={{ scale: 1, transition: { duration: 0.3 } }}
+        className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100">
           <Image
             className="w-full h-[300px] md:h-[400px] object-cover hover:opacity-90 transition duration-300"
             src={Img3} // Replace with the second card's image
@@ -201,10 +292,24 @@ export default function Page() {
               Hikkaduwa.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
+      
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-3  justify-center items-center">
-        <div className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg transform transition hover:scale-105 hover:shadow-2xl duration-300 bg-gradient-to-br from-white to-gray-100">
+        {/* Card 7 */}
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+          whileHover={{ scale: 1.02,transition: { duration: 0.3 } }}
+          animate={{ scale: 1, transition: { duration: 0.3 } }}
+        className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100">
           <Image
             className="w-full h-[300px] md:h-[400px] object-cover hover:opacity-90 transition duration-300"
             src={Img2} // Replace with the second card's image
@@ -224,8 +329,22 @@ export default function Page() {
               and more with customized itineraries.
             </p>
           </div>
-        </div>
-        <div className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg transform transition hover:scale-105 hover:shadow-2xl duration-300 bg-gradient-to-br from-white to-gray-100">
+        </motion.div>
+
+        {/* Card 8 */}
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+          whileHover={{ scale: 1.02,transition: { duration: 0.3 } }}
+          animate={{ scale: 1, transition: { duration: 0.3 } }}
+        className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100">
           <Image
             className="w-full h-[300px] md:h-[400px] object-cover hover:opacity-90 transition duration-300"
             src={Img7} // Replace with the second card's image
@@ -245,10 +364,24 @@ export default function Page() {
               tailored to your preferences.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-3  justify-center items-center">
-        <div className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg transform transition hover:scale-105 hover:shadow-2xl duration-300 bg-gradient-to-br from-white to-gray-100">
+        {/* Card 9 */}
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+          whileHover={{ scale: 1.02,transition: { duration: 0.3 } }}
+          animate={{ scale: 1, transition: { duration: 0.3 } }}
+        className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100">
           <Image
             className="w-full h-[300px] md:h-[400px] object-cover hover:opacity-90 transition duration-300"
             src={Img5} // Replace with the second card's image
@@ -268,7 +401,7 @@ export default function Page() {
               International Airport.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

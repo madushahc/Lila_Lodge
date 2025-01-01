@@ -37,7 +37,7 @@ export default function Book() {
 
   return (
     <div>
-      <div className="relative w-full h-[71vh] sm:h-[70vh]">
+      <div className="font-Quicksand relative w-full h-[71vh] sm:h-[70vh]">
         {/* Overlay */}
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-10"></div>
         <Image
@@ -47,7 +47,7 @@ export default function Book() {
           layout="fill"
         />
       </div>
-      <div className="p-10">
+      <div className="font-Quicksand font-medium p-10">
         <div className="rounded-xl shadow-xl flex flex-col md:flex-row justify-between px-8 py-12 bg-purple-100">
           {/* Contact Form */}
           <motion.div

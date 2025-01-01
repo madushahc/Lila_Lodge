@@ -5,7 +5,7 @@ import Image from "next/image";
 import React from "react";
 export default function page() {
   return (
-    <div className="">
+    <div className="font-Quicksand">
       <div className="relative w-full h-[71vh] sm:h-[70vh]">
         {/* Overlay */}
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-10"></div>

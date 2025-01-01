@@ -13,7 +13,7 @@ const handleBookNow = () => {
 function Footer() {
   return (
     <>
-      <div className="bg-black opacity-90 h-1/2 w-full flex md:flex-row flex-col justify-around items-start p-20 pb-7">
+      <div className="font-Quicksand bg-black opacity-90 h-1/2 w-full flex md:flex-row flex-col justify-around items-start p-20 pb-7">
         <div className="p-5">
           <ul>
             <p className="text-white font-bold text-3xl pb-6">

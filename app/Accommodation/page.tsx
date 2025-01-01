@@ -80,7 +80,7 @@ export default function Page() {
   }
 
   return (
-    <div className="mb-24">
+    <div className="font-Quicksand mb-24">
       <div className="relative w-full h-[71vh] sm:h-[70vh] mb-10">
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-10"></div>
         <Image
