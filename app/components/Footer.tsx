@@ -31,6 +31,14 @@ function Footer() {
                 <FaWhatsapp className="text-2xl text-white cursor-pointer hover:text-purple-600" />
               </a>
             </div>
+            <div>
+          <button
+            onClick={handleBookNow}
+            className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition duration-300"
+          >
+            Book Now
+          </button>
+        </div>
           </ul>
         </div>
         <div className="p-5">
@@ -62,14 +70,7 @@ function Footer() {
             </a>
           </ul>
         </div>
-        <div>
-          <button
-            onClick={handleBookNow}
-            className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition duration-300"
-          >
-            Book Now
-          </button>
-        </div>
+        
         <div className="p-5">
           <ul>
             <li className="text-white text-md pb-2 font-bold hover:text-purple-600 cursor-pointer flex flex-col md:flex-row items-start md:items-center">

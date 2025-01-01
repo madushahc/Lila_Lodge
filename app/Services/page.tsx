@@ -9,6 +9,7 @@ import Img6 from "../public/Fishing.jpg";
 import Img7 from "../public/Beach.jpg";
 import Img9 from "../public/Kandy.jpg";
 import Img10 from "../public/safari.jpg";
+import {motion} from "framer-motion";
 export default function Page() {
   return (
     <div className="mb-3">
