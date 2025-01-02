@@ -58,7 +58,7 @@ const ImageCarousel = () => {
 
 export default function Home() {
   return (
-    <div className="bg-gray-50 min-h-screen overflow-hidden">
+    <div className="font-Quicksand bg-gray-50 min-h-screen overflow-hidden">
       <Hero />
       <div className="container mx-auto px-4 py-6">
         {/* Hero Section */}
@@ -74,7 +74,7 @@ export default function Home() {
                  ease: "easeIn",
                  duration: 1,
                }}
-            className="text-4xl font-bold text-gray-800 leading-tight">
+            className="font-extrabold text-4xl text-gray-800 leading-tight">
               Ayubowan! <br /> Welcome to Lila Lodge, Bentota
             </motion.h1>
             <motion.h2
