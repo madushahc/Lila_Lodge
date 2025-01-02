@@ -2,7 +2,7 @@
 import { useRef } from "react";
 import emailjs from "emailjs-com";
 import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
-
+import {motion} from "framer-motion";
 export default function Form() {
   const form = useRef<HTMLFormElement>(null);
 
@@ -34,7 +34,17 @@ export default function Form() {
     <div className="p-10">
       <div className="rounded-xl shadow-xl flex flex-col md:flex-row justify-between px-8 py-12 bg-purple-100">
         {/* Contact Details */}
-        <div className="w-full md:w-1/2 space-y-6">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            x: { type: "spring", stiffness: 50 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+        className="w-full md:w-1/2 space-y-6">
           <h1 className="text-4xl font-semibold">Contact Us</h1>
           <div>
             <h3 className="text-lg font-medium">Address:</h3>
@@ -73,10 +83,19 @@ export default function Form() {
               <FaWhatsapp className="text-2xl text-black cursor-pointer hover:text-purple-600" />
             </a>
           </div>
-        </div>
+        </motion.div>
 
         {/* Contact Form */}
-        <form
+        <motion.form
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            x: { type: "spring", stiffness: 50 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
           ref={form}
           onSubmit={sendEmail}
           className="w-full md:w-1/2 space-y-6 mt-8 md:mt-0"
@@ -356,23 +375,43 @@ export default function Form() {
           >
             Send Inquiry
           </button>
-        </form>
+        </motion.form>
       </div>
 
       {/* Map Section */}
       <div className="rounded-2xl flex flex-col md:flex-row justify-between items-center bg-purple-100 mt-10">
-        <div className="px-8 py-12">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            x: { type: "spring", stiffness: 50 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+        className="px-8 py-12">
           <h1 className="text-3xl font-bold">Our Location</h1>
           <p className="text-lg text-gray-700">
             Visit our place to enjoy yourself
           </p>
-        </div>
-        <div className="p-5">
+        </motion.div>
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            x: { type: "spring", stiffness: 50 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+        className="p-5">
           <iframe
             className="rounded-xl w-full max-w-[1000px] h-[400px] md:w-[1000px] md:h-[600px]"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7929.593765013944!2d80.0119150843243!3d6.42013897925796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae22d8712a6f7f9%3A0xa2df7410dca18ad4!2sLila%20Lodge%20-%20Bentota!5e0!3m2!1sen!2slk!4v1735270835364!5m2!1sen!2slk"
           ></iframe>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -20,8 +20,8 @@ const Nav = ({openNav}:Props) => {
   },[]);
 
   return (
-    <div className={` ${navBg?"bg-black bg-opacity-80  ":"fixed"} transition-all duration-200 h-[12vh] z-[1000] fixed w-full`}>
-      <div className='flex items-center h-full justify-between w-[90%] xl:w[60%] sm:w[75%] mx-auto'>
+    <div className={` ${navBg?" bg-black bg-opacity-80  ":"fixed"} transition-all duration-200 h-[12vh] z-[1000] fixed w-full`}>
+      <div className='font-Quicksand flex items-center h-full justify-between w-[90%] xl:w[60%] sm:w[75%] mx-auto'>
         {/*Logo */}
         <div className='flex items-center space-x-2'>
           <div className='w-520 h-10 flex items-center justify-center'>

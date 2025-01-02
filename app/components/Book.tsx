@@ -5,6 +5,7 @@ import emailjs from "emailjs-com";
 import Image from "next/image";
 import Img8 from "../public/benthota.jpg";
 import img5 from "../public/kande Viharaya.jpg";
+import {motion} from "framer-motion";
 export default function Book() {
   const form = useRef<HTMLFormElement>(null);
 
@@ -36,7 +37,7 @@ export default function Book() {
 
   return (
     <div>
-      <div className="relative w-full h-[71vh] sm:h-[70vh]">
+      <div className="font-Quicksand relative w-full h-[71vh] sm:h-[70vh]">
         {/* Overlay */}
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-10"></div>
         <Image
@@ -46,17 +47,36 @@ export default function Book() {
           layout="fill"
         />
       </div>
-      <div className="p-10">
+      <div className="font-Quicksand font-medium p-10">
         <div className="rounded-xl shadow-xl flex flex-col md:flex-row justify-between px-8 py-12 bg-purple-100">
           {/* Contact Form */}
-          <div className="w-full md:w-1/2">
+          <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 50 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+          className="p-5 w-full md:w-1/2">
             <Image
               src={img5}
               alt="Kande Viharaya"
-              className="w-auto h-full object-cover rounded-lg"
+              className="w-auto h-full object-cover rounded-lg "
             />
-          </div>
-          <form
+          </motion.div>
+          <motion.form
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            x: { type: "spring", stiffness: 50 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
             ref={form}
             onSubmit={sendEmail}
             className="w-full md:w-1/2 space-y-6 mt-8 md:mt-0"
@@ -438,7 +458,7 @@ export default function Book() {
             >
               Book Now
             </button>
-          </form>
+          </motion.form>
         </div>
       </div>
     </div>
