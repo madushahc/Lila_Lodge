@@ -11,7 +11,7 @@ import dd5 from "../public/_O4A8433.jpg";
 import dd6 from "../public/_O4A8423.jpg";
 import dd7 from "../public/_O4A8481.jpg";
 import dd8 from "../public/_O4A8523.jpg";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 const handleBookNow = () => {
   window.location.href = "/Book";
 };
@@ -90,8 +90,8 @@ export default function Page() {
           layout="fill"
         />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center m-3 lg:m-28">
-        <div className="text-center md:text-left space-y-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center m-3 lg:m-28 lg:mx-auto lg:text-center lg:justify-center lg:items-center">
+        <div className="text-center md:text-left lg:text-center space-y-4 lg:m-4">
           <motion.h1
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -102,11 +102,12 @@ export default function Page() {
               ease: "easeIn",
               duration: 1,
             }}
-          className="text-center lg:text-5xl text-4xl font-bold text-gray-800 leading-tight">
+            className="text-center lg:text-5xl text-4xl font-bold text-gray-800 leading-tight"
+          >
             A unique distinctive lifestyle like no other!
           </motion.h1>
-        </div><br></br>
-        <div className="flex justify-center">
+        </div>
+        <div className="flex justify-center lg:justify-center lg:m-4">
           <motion.p
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -117,7 +118,8 @@ export default function Page() {
               ease: "easeIn",
               duration: 1,
             }}
-          className="text-center text-lg text-gray-700 leading-relaxed">
+            className="text-center text-lg text-gray-700 leading-relaxed"
+          >
             The styling and design of each room caters to relaxation and
             simplicity. In total, we offer 15 well acquainted rooms, including a
             Club Suite. Each room is individually decorated with hand picked
@@ -125,6 +127,7 @@ export default function Page() {
           </motion.p>
         </div>
       </div>
+
       {/* Carousel */}
       <motion.div
         initial={{ x: -100, opacity: 0 }}
@@ -136,7 +139,8 @@ export default function Page() {
           ease: "easeIn",
           duration: 1,
         }}
-      className="relative w-full max-w-4xl mx-auto mb-36">
+        className="relative w-full max-w-4xl mx-auto mb-36"
+      >
         <div className="relative w-full h-[500px] overflow-hidden rounded-lg">
           {images.map((image, index) => (
             <div
@@ -198,7 +202,8 @@ export default function Page() {
           }}
           whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
           animate={{ scale: 1, transition: { duration: 0.3 } }}
-        className="absolute -bottom-20 right-0 bg-white p-3 shadow-lg rounded-lg z-50 max-w-full sm:max-w-md w-full sm:w-[600px] h-[180px] flex flex-col justify-between">
+          className="absolute -bottom-20 right-0 bg-white p-3 shadow-lg rounded-lg z-50 max-w-full sm:max-w-md w-full sm:w-[600px] h-[180px] flex flex-col justify-between"
+        >
           <div className="flex-1">
             <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3">
               Deluxe Double Room
@@ -238,7 +243,8 @@ export default function Page() {
           ease: "easeIn",
           duration: 1,
         }}
-      className="relative w-full max-w-4xl mx-auto mb-6">
+        className="relative w-full max-w-4xl mx-auto mb-6"
+      >
         <div className="relative w-full h-[500px] overflow-hidden rounded-lg">
           {imagesd.map((image, index) => (
             <div
@@ -300,7 +306,8 @@ export default function Page() {
           }}
           whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
           animate={{ scale: 1, transition: { duration: 0.3 } }}
-        className="absolute -bottom-20 right-0 bg-white p-3 shadow-lg rounded-lg z-50 max-w-full sm:max-w-md w-full sm:w-[600px] h-[180px] flex flex-col justify-between">
+          className="absolute -bottom-20 right-0 bg-white p-3 shadow-lg rounded-lg z-50 max-w-full sm:max-w-md w-full sm:w-[600px] h-[180px] flex flex-col justify-between"
+        >
           <div className="flex-1">
             <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3">
               Deluxe Family Room
