@@ -4,8 +4,8 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import Image from "next/image";
 import Img8 from "../public/benthota.jpg";
-import img5 from "../public/kande Viharaya.jpg";
-import {motion} from "framer-motion";
+import img5 from "../public/dronebentota.jpg";
+import { motion } from "framer-motion";
 export default function Book() {
   const form = useRef<HTMLFormElement>(null);
 
@@ -48,8 +48,7 @@ export default function Book() {
         />
       </div>
       <div className="font-Quicksand font-medium p-10">
-        <div className="rounded-xl shadow-xl flex flex-col md:flex-row justify-between px-8 py-12 bg-purple-100">
-          {/* Contact Form */}
+        <div className="rounded-xl shadow-xl flex flex-col md:flex-row justify-between px-4 md:px-8 py-8 md:py-12 bg-purple-100">
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -60,23 +59,24 @@ export default function Book() {
               ease: "easeIn",
               duration: 1,
             }}
-          className="p-5 w-full md:w-1/2">
+            className="hidden md:block p-5 w-full md:w-1/2"
+          >
             <Image
               src={img5}
               alt="Kande Viharaya"
-              className="w-auto h-full object-cover rounded-lg "
+              className="w-auto h-full object-cover rounded-lg"
             />
           </motion.div>
           <motion.form
-          initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{
-            delay: 0.2,
-            x: { type: "spring", stiffness: 50 },
-            opacity: { duration: 1 },
-            ease: "easeIn",
-            duration: 1,
-          }}
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 50 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
             ref={form}
             onSubmit={sendEmail}
             className="w-full md:w-1/2 space-y-6 mt-8 md:mt-0"
