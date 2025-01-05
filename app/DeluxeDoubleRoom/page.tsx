@@ -19,7 +19,7 @@ import { FaWifi } from "react-icons/fa";
 import { MdCoffeeMaker } from "react-icons/md";
 import { MdOutlineDining } from "react-icons/md";
 import { FaBath } from "react-icons/fa6";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 // Static images array
 const imagesd: StaticImageData[] = [df1, df2, df3, df4];
@@ -72,7 +72,8 @@ export default function Page() {
             ease: "easeIn",
             duration: 1,
           }}
-         className="text-5xl font-semibold text-gray-800 mb-4 text-center">
+          className="text-5xl font-semibold text-gray-800 mb-4 text-center"
+        >
           Deluxe Double Room
         </motion.h1>
         <motion.p
@@ -85,10 +86,13 @@ export default function Page() {
             ease: "easeIn",
             duration: 1,
           }}
-        className="text-gray-600 mb-6 text-center text-2xl lg:ml-40 lg:mr-40 m-10">
-          02 rooms located on the ground floor which offers a private area,
-          large bay windows and tile floors that provide additional living
-          space.
+          className="text-gray-600 mb-6 text-center text-2xl lg:ml-40 lg:mr-40 m-10"
+        >
+          Deluxe Double Rooms offer a perfect blend of comfort and elegance,
+          featuring modern amenities and serene views. Ideal for couples or
+          small families, these spacious rooms provide a relaxing escape with a
+          king-sized bed and stylish décor, ensuring a memorable stay at Lila
+          Lodge, Bentota.
         </motion.p>
         <motion.h2
           initial={{ y: 100, opacity: 0 }}
@@ -100,147 +104,158 @@ export default function Page() {
             ease: "easeIn",
             duration: 1,
           }}
-        className="text-3xl font-bold text-gray-800 mb-16 text-center ">
+          className="text-3xl font-bold text-gray-800 mb-16 text-center "
+        >
           Highlights
         </motion.h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 justify-center items-center">
           <motion.div
             initial={{ y: 100, opacity: 0 }}
-                 whileInView={{ y: 0, opacity: 1 }}
-                 transition={{
-                   delay: 0.2,
-                   y: { type: "spring", stiffness: 60 },
-                   opacity: { duration: 1 },
-                   ease: "easeIn",
-                   duration: 1,
-                 }}
-          className="flex flex-col items-center space-y-2">
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="flex flex-col items-center space-y-2"
+          >
             <LiaFanSolid className="text-blue-500 text-4xl" />
             <p className="text-gray-700">Fan</p>
           </motion.div>
           <motion.div
             initial={{ y: 100, opacity: 0 }}
-                 whileInView={{ y: 0, opacity: 1 }}
-                 transition={{
-                   delay: 0.2,
-                   y: { type: "spring", stiffness: 60 },
-                   opacity: { duration: 1 },
-                   ease: "easeIn",
-                   duration: 1,
-                 }}
-          className="flex flex-col items-center space-y-2">
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="flex flex-col items-center space-y-2"
+          >
             <TbAirConditioning className="text-blue-500 text-4xl" />
             <p className="text-gray-700">Air conditioner</p>
           </motion.div>
           <motion.div
             initial={{ y: 100, opacity: 0 }}
-                 whileInView={{ y: 0, opacity: 1 }}
-                 transition={{
-                   delay: 0.2,
-                   y: { type: "spring", stiffness: 60 },
-                   opacity: { duration: 1 },
-                   ease: "easeIn",
-                   duration: 1,
-                 }}
-          className="flex flex-col items-center space-y-2">
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="flex flex-col items-center space-y-2"
+          >
             <IoIosTv className="text-blue-500 text-4xl" />
-            <p className="text-gray-700">TV</p>
+            <p className="text-gray-700">TV (common)</p>
           </motion.div>
           <motion.div
             initial={{ y: 100, opacity: 0 }}
-                 whileInView={{ y: 0, opacity: 1 }}
-                 transition={{
-                   delay: 0.2,
-                   y: { type: "spring", stiffness: 60 },
-                   opacity: { duration: 1 },
-                   ease: "easeIn",
-                   duration: 1,
-                 }}
-          className="flex flex-col items-center space-y-2">
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="flex flex-col items-center space-y-2"
+          >
             <IoBed className="text-blue-500 text-4xl" />
             <p className="text-gray-700">Bed</p>
           </motion.div>
           <motion.div
             initial={{ y: 100, opacity: 0 }}
-                 whileInView={{ y: 0, opacity: 1 }}
-                 transition={{
-                   delay: 0.2,
-                   y: { type: "spring", stiffness: 60 },
-                   opacity: { duration: 1 },
-                   ease: "easeIn",
-                   duration: 1,
-                 }}
-          className="flex flex-col items-center space-y-2">
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="flex flex-col items-center space-y-2"
+          >
             <BiFridge className="text-blue-500 text-4xl" />
             <p className="text-gray-700">Mini Fridge</p>
           </motion.div>
           <motion.div
             initial={{ y: 100, opacity: 0 }}
-                 whileInView={{ y: 0, opacity: 1 }}
-                 transition={{
-                   delay: 0.2,
-                   y: { type: "spring", stiffness: 60 },
-                   opacity: { duration: 1 },
-                   ease: "easeIn",
-                   duration: 1,
-                 }}
-          className="flex flex-col items-center space-y-2">
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="flex flex-col items-center space-y-2"
+          >
             <MdChair className="text-blue-500 text-4xl" />
             <p className="text-gray-700">Seating Area</p>
           </motion.div>
           <motion.div
             initial={{ y: 100, opacity: 0 }}
-                 whileInView={{ y: 0, opacity: 1 }}
-                 transition={{
-                   delay: 0.2,
-                   y: { type: "spring", stiffness: 60 },
-                   opacity: { duration: 1 },
-                   ease: "easeIn",
-                   duration: 1,
-                 }}
-          className="flex flex-col items-center space-y-2">
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="flex flex-col items-center space-y-2"
+          >
             <FaWifi className="text-blue-500 text-4xl" />
             <p className="text-gray-700">Free Wi-fi</p>
           </motion.div>
           <motion.div
             initial={{ y: 100, opacity: 0 }}
-                 whileInView={{ y: 0, opacity: 1 }}
-                 transition={{
-                   delay: 0.2,
-                   y: { type: "spring", stiffness: 60 },
-                   opacity: { duration: 1 },
-                   ease: "easeIn",
-                   duration: 1,
-                 }}
-          className="flex flex-col items-center space-y-2">
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="flex flex-col items-center space-y-2"
+          >
             <MdCoffeeMaker className="text-blue-500 text-4xl" />
-            <p className="text-gray-700">Coffee Maker</p>
+            <p className="text-gray-700">Coffee Maker (common)</p>
           </motion.div>
           <motion.div
             initial={{ y: 100, opacity: 0 }}
-                 whileInView={{ y: 0, opacity: 1 }}
-                 transition={{
-                   delay: 0.2,
-                   y: { type: "spring", stiffness: 60 },
-                   opacity: { duration: 1 },
-                   ease: "easeIn",
-                   duration: 1,
-                 }}
-          className="flex flex-col items-center space-y-2">
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="flex flex-col items-center space-y-2"
+          >
             <MdOutlineDining className="text-blue-500 text-4xl" />
             <p className="text-gray-700">Food</p>
           </motion.div>
           <motion.div
             initial={{ y: 100, opacity: 0 }}
-                 whileInView={{ y: 0, opacity: 1 }}
-                 transition={{
-                   delay: 0.2,
-                   y: { type: "spring", stiffness: 60 },
-                   opacity: { duration: 1 },
-                   ease: "easeIn",
-                   duration: 1,
-                 }}
-          className="flex flex-col items-center space-y-2">
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="flex flex-col items-center space-y-2"
+          >
             <FaBath className="text-blue-500 text-4xl" />
             <p className="text-gray-700">Attached Bathroom</p>
           </motion.div>
@@ -255,23 +270,27 @@ export default function Page() {
             ease: "easeIn",
             duration: 1,
           }}
-        className="text-gray-700 text-center mt-6">Room size: 80 Sq m</motion.p>
+          className="text-gray-700 text-center mt-6"
+        >
+          Room size: 80 Sq m
+        </motion.p>
         {/* Book Now Button placed after Room size */}
         <div className="mt-6 flex justify-center">
           <Link href="/Book">
             <motion.button
-            initial={{ y: 100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{
-              delay: 0.2,
-              y: { type: "spring", stiffness: 60 },
-              opacity: { duration: 1 },
-              ease: "easeIn",
-              duration: 1,
-            }}
-            whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
-            animate={{ scale: 1, transition: { duration: 0.3 } }}
-            className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-md">
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{
+                delay: 0.2,
+                y: { type: "spring", stiffness: 60 },
+                opacity: { duration: 1 },
+                ease: "easeIn",
+                duration: 1,
+              }}
+              whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
+              animate={{ scale: 1, transition: { duration: 0.3 } }}
+              className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-md"
+            >
               Book Now
             </motion.button>
           </Link>

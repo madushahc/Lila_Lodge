@@ -45,7 +45,7 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
 
         <div className="absolute bottom-80 gap-6 flex">
           {/*icons*/}
-          <a href="">
+          <a href="https://www.instagram.com/lila_lodge_bentota?igsh=MTlsMWNhOTluamZ1dA==">
             <FaInstagram className="text-3xl md:text-3xl text-white " />
           </a>
           <a href="https://www.facebook.com/share/14bX29WAWi/?mibextid=wwXIfr">

@@ -21,7 +21,7 @@ function Footer() {
             </p>
             <div className="flex gap-6 pb-5">
               {/* icons */}
-              <a href="">
+              <a href="https://www.instagram.com/lila_lodge_bentota?igsh=MTlsMWNhOTluamZ1dA==">
                 <FaInstagram className="text-2xl text-white cursor-pointer hover:text-purple-600" />
               </a>
               <a href="https://www.facebook.com/share/14bX29WAWi/?mibextid=wwXIfr">
@@ -66,6 +66,11 @@ function Footer() {
             <a href="/Contact">
               <li className="text-white text-md pb-2 fint-bold hover:text-purple-600 cursor-pointer">
                 Contacts
+              </li>
+            </a>
+            <a href="https://facebook.com/people/Lila-Lodge/61569978188636/?sk=reviews">
+              <li className="text-white text-md pb-2 fint-bold hover:text-purple-600 cursor-pointer">
+                Reviews
               </li>
             </a>
           </ul>
