@@ -189,7 +189,7 @@ export default function Book() {
                   name="user_country"
                   defaultValue=""
                   required
-                  className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-200"
+                  className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-200 md:text-base text-sm"
                 >
                   <option value="" disabled>
                     Select your country
@@ -411,7 +411,7 @@ export default function Book() {
                 </select>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
               <div>
                 <label className="block mb-2 text-sm font-medium text-gray-800">
                   Check In Date
@@ -420,8 +420,8 @@ export default function Book() {
                   type="date"
                   name="user_checkIn"
                   required
-                  placeholder="Check IN"
-                  className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-200"
+                  placeholder="Check In"
+                  className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-200 text-sm md:text-base"
                   min={new Date().toISOString().split("T")[0]} // Disable past dates
                 />
               </div>
@@ -435,7 +435,7 @@ export default function Book() {
                   name="user_checkout"
                   required
                   placeholder="Check Out"
-                  className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-200"
+                  className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-200 text-sm md:text-base"
                   min={new Date().toISOString().split("T")[0]} // Disable past dates
                 />
               </div>
