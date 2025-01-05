@@ -76,7 +76,9 @@ export default function Form() {
           {/* Social Icons */}
           <div className="flex items-center space-x-6 pt-5">
             <span className="font-bold">Follow us on:</span>
-            <FaInstagram className="text-2xl text-black cursor-pointer hover:text-purple-600" />
+            <a href="https://www.instagram.com/lila_lodge_bentota?igsh=MTlsMWNhOTluamZ1dA==">
+              <FaInstagram className="text-2xl text-black cursor-pointer hover:text-purple-600" />
+            </a>
             <a href="https://www.facebook.com/share/14bX29WAWi/?mibextid=wwXIfr">
               <FaFacebook className="text-2xl text-black cursor-pointer hover:text-purple-600" />
             </a>
