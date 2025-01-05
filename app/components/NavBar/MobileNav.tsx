@@ -43,7 +43,7 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
           </div>
         </div>
 
-        <div className="absolute bottom-80 gap-6 flex">
+        <div className="absolute p-60 gap-6 flex">
           {/*icons*/}
           <a href="">
             <FaInstagram className="text-3xl md:text-3xl text-white " />

@@ -49,7 +49,7 @@ const ImageCarousel = () => {
         src={images[currentImageIndex]}
         width={400}
         height={600}
-        alt="Lila Lodge"
+        alt="Lila Lodge guest house surrounded by greenery in Bentota, Sri Lanka."
         className="rounded-lg shadow-lg object-cover"
       />
     </motion.div>
@@ -123,7 +123,7 @@ export default function Home() {
               src={img1}
               width={400}
               height={600}
-              alt="Lila Lodge"
+              alt="Lila Lodge guest house surrounded by greenery in Bentota, Sri Lanka."
               className="rounded-lg shadow-lg object-cover"
             />
           </motion.div>
