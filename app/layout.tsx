@@ -42,6 +42,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Lila Lodge | Bentota</title>
+        <meta name="google-site-verification" content="bL6pDQGtoXLH0sPID93w0CK8nd8r5wCFcxa3g9jQnyM" />
         <meta name="description" content="Escape to serenity at Lila Lodge in Bentota, Sri Lanka." />
         <script
           type="application/ld+json"
