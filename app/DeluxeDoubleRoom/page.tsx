@@ -91,7 +91,7 @@ export default function Page() {
           Deluxe Double Rooms offer a perfect blend of comfort and elegance,
           featuring modern amenities and serene views. Ideal for couples or
           small families, these spacious rooms provide a relaxing escape with a
-          king-sized bed and stylish décor, ensuring a memorable stay at Lila
+          king-sized bed and stylish decor, ensuring a memorable stay at Lila
           Lodge, Bentota.
         </motion.p>
         <motion.h2

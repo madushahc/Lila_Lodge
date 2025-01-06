@@ -11,15 +11,15 @@ export default function Form() {
     if (form.current) {
       emailjs
         .sendForm(
-          "service_xpeqglo",
-          "template_5c1ik1i",
+          "service_v14g0np",
+          "template_670xwj3",
           form.current,
-          "WHT6NzkxL1VaP3GKD"
+          "VQjUiFKdN2h2mK8GW"
         )
         .then(
           (result) => {
             console.log("Message sent:", result.text);
-            alert("Message sent successfully!");
+            alert("Thank you for your inquary! We have received your request");
             form.current?.reset();
           },
           (error) => {
