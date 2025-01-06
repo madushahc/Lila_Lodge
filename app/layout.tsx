@@ -12,11 +12,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Lila Lodge - Luxurious Villas in Bentota",
     description: "Discover Lila Lodge, a luxurious villa in Bentota offering serene views, modern amenities, and an unforgettable experience.",
-    url: "https://lila-lodge.vercel.app/",
+    url: "https://lilalodge.com/",
     siteName: "Lila Lodge",
     images: [
       {
-        url: "./public/_O4A8549.jpg",
+        url: "www.lilalodge.com/_O4A8549.jpg",
         width: 800,
         height: 600,
         alt: "Lila Lodge - Luxurious Villas in Bentota",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lila Lodge - Luxurious Villas in Bentota",
     description: "Discover Lila Lodge, a luxurious villa in Bentota offering serene views, modern amenities, and an unforgettable experience.",
-    images: ["./public/_O4A8549.jpg"],
+    images: ["www.lilalodge.com/_O4A8549.jpg"],
   },
 };
 
