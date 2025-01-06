@@ -14,10 +14,10 @@ export default function Book() {
     if (form.current) {
       emailjs
         .sendForm(
-          "service_xpeqglo", // Replace with your EmailJS service ID
-          "template_3itmuko", // Replace with your EmailJS template ID
+          "service_v14g0np", // Replace with your EmailJS service ID
+          "template_k0lzuk9", // Replace with your EmailJS template ID
           form.current,
-          "WHT6NzkxL1VaP3GKD" // Replace with your EmailJS user ID
+          "VQjUiFKdN2h2mK8GW" // Replace with your EmailJS user ID
         )
         .then(
           (result) => {
