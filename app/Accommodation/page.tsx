@@ -80,6 +80,34 @@ export default function Page() {
   }
 
   return (
+    <>
+    <head>
+        <title>Rooms | Lila Lodge</title>
+        <meta name="description" content="Explore the cozy rooms at Lila Lodge, Bentota." />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://lila-lodge.vercel.app/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Rooms",
+                  "item": "https://lila-lodge.vercel.app/rooms"
+                }
+              ]
+            })
+          }}
+        ></script>
+      </head>
     <div className="font-Quicksand mb-24">
       <div className="relative w-full h-[71vh] sm:h-[70vh] mb-10">
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-10"></div>
@@ -337,5 +365,6 @@ export default function Page() {
         </motion.div>
       </motion.div>
     </div>
+    </>
   );
 }
