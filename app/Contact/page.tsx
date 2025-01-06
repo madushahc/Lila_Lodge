@@ -5,6 +5,34 @@ import Img8 from "../public/contact image.jpg";
 
 export default function page() {
   return (
+    <>
+    <head>
+        <title>Contact Us | Lila Lodge</title>
+        <meta name="description" content="Get in touch with Lila Lodge for bookings, inquiries, or assistance." />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ContactPage",
+              "mainEntity": {
+                "@type": "Organization",
+                "name": "Lila Lodge",
+                "url": "https://lila-lodge.vercel.app/",
+                "logo": "https://lila-lodge.vercel.app/logo.png",
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+94 71 424 1951",
+                  "email": "lilalodgebentota@gmail.com",
+                  "contactType": "Customer Service",
+                  "areaServed": "Sri Lanka",
+                  "availableLanguage": ["English", "Sinhala"]
+                }
+              }
+            })
+          }}
+        />
+      </head>
     <div>
       <div className="relative w-full h-[71vh] sm:h-[70vh]">
         {/* Overlay */}
@@ -20,5 +48,6 @@ export default function page() {
         <Form />
       </div>
     </div>
+    </>
   );
 }
