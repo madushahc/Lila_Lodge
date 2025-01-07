@@ -93,7 +93,7 @@ function Footer() {
             <li className="text-white text-md pb-2 font-bold hover:text-purple-600 cursor-pointer flex flex-col md:flex-row items-start md:items-center pt-2">
               <MdOutlineEmail className="text-2xl cursor-pointer hover:text-purple-600 mr-2" />
               <span>
-                lilalodgebentota@gmail.com | antheagrussell22@icloud.com
+                lilalodgeofficial@gmail.com | antheagrussell22@icloud.com
               </span>
             </li>
           </ul>

@@ -1,6 +1,6 @@
-'use client';
+"use client";
 import Image from "next/image";
-import Img0 from "../public/adventure.jpg";
+import Img0 from "../public/paramotering.jpg";
 import Img8 from "../public/7468418.jpg";
 import Img2 from "../public/sigiriya.jpg";
 import Img3 from "../public/colombo.jpg";
@@ -10,7 +10,7 @@ import Img6 from "../public/Fishing.jpg";
 import Img7 from "../public/Beach.jpg";
 import Img9 from "../public/Kandy.jpg";
 import Img10 from "../public/safari.jpg";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 export default function Page() {
   return (
     <div className="font-Quicksand mb-3">
@@ -37,7 +37,8 @@ export default function Page() {
           ease: "easeIn",
           duration: 1,
         }}
-      className="text-3xl font-bold text-gray-800 mb-6 text-center mt-6">
+        className="text-3xl font-bold text-gray-800 mb-6 text-center mt-6"
+      >
         Services & Excursions
       </motion.h1>
 
@@ -54,9 +55,10 @@ export default function Page() {
             ease: "easeIn",
             duration: 1,
           }}
-          whileHover={{ scale: 1.02,transition: { duration: 0.3 } }}
+          whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
           animate={{ scale: 1, transition: { duration: 0.3 } }}
-        className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100">
+          className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100"
+        >
           <Image
             className="w-full h-[300px] md:h-[400px] object-cover hover:opacity-90 transition duration-300"
             src={Img10}
@@ -101,9 +103,10 @@ export default function Page() {
             ease: "easeIn",
             duration: 1,
           }}
-          whileHover={{ scale: 1.02,transition: { duration: 0.3 } }}
+          whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
           animate={{ scale: 1, transition: { duration: 0.3 } }}
-        className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg lg:mt-3 bg-gradient-to-br from-white to-gray-100 ">
+          className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg lg:mt-3 bg-gradient-to-br from-white to-gray-100 "
+        >
           <Image
             className="w-full h-[300px] md:h-[400px] object-cover hover:opacity-90 transition duration-300"
             src={Img6} // Replace with the second card's image
@@ -150,9 +153,10 @@ export default function Page() {
             ease: "easeIn",
             duration: 1,
           }}
-          whileHover={{ scale: 1.02,transition: { duration: 0.3 } }}
+          whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
           animate={{ scale: 1, transition: { duration: 0.3 } }}
-        className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100">
+          className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100"
+        >
           <Image
             className="w-full h-[300px] md:h-[400px] object-cover hover:opacity-90 transition duration-300"
             src={Img9} // Replace with the second card's image
@@ -192,9 +196,10 @@ export default function Page() {
             ease: "easeIn",
             duration: 1,
           }}
-          whileHover={{ scale: 1.02,transition: { duration: 0.3 } }}
+          whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
           animate={{ scale: 1, transition: { duration: 0.3 } }}
-        className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100">
+          className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100"
+        >
           <Image
             className="w-full h-[300px] md:h-[400px] object-cover hover:opacity-90 transition duration-300"
             src={Img4} // Replace with the second card's image
@@ -236,9 +241,10 @@ export default function Page() {
             ease: "easeIn",
             duration: 1,
           }}
-          whileHover={{ scale: 1.02,transition: { duration: 0.3 } }}
+          whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
           animate={{ scale: 1, transition: { duration: 0.3 } }}
-        className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100">
+          className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100"
+        >
           <Image
             className="w-full h-[300px] md:h-[400px] object-cover hover:opacity-90 transition duration-300"
             src={Img0} // Replace with the second card's image
@@ -270,9 +276,10 @@ export default function Page() {
             ease: "easeIn",
             duration: 1,
           }}
-          whileHover={{ scale: 1.02,transition: { duration: 0.3 } }}
+          whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
           animate={{ scale: 1, transition: { duration: 0.3 } }}
-        className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100">
+          className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100"
+        >
           <Image
             className="w-full h-[300px] md:h-[400px] object-cover hover:opacity-90 transition duration-300"
             src={Img3} // Replace with the second card's image
@@ -294,7 +301,7 @@ export default function Page() {
           </div>
         </motion.div>
       </div>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-3  justify-center items-center">
         {/* Card 7 */}
         <motion.div
@@ -307,9 +314,10 @@ export default function Page() {
             ease: "easeIn",
             duration: 1,
           }}
-          whileHover={{ scale: 1.02,transition: { duration: 0.3 } }}
+          whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
           animate={{ scale: 1, transition: { duration: 0.3 } }}
-        className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100">
+          className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100"
+        >
           <Image
             className="w-full h-[300px] md:h-[400px] object-cover hover:opacity-90 transition duration-300"
             src={Img2} // Replace with the second card's image
@@ -342,9 +350,10 @@ export default function Page() {
             ease: "easeIn",
             duration: 1,
           }}
-          whileHover={{ scale: 1.02,transition: { duration: 0.3 } }}
+          whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
           animate={{ scale: 1, transition: { duration: 0.3 } }}
-        className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100">
+          className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100"
+        >
           <Image
             className="w-full h-[300px] md:h-[400px] object-cover hover:opacity-90 transition duration-300"
             src={Img7} // Replace with the second card's image
@@ -379,9 +388,10 @@ export default function Page() {
             ease: "easeIn",
             duration: 1,
           }}
-          whileHover={{ scale: 1.02,transition: { duration: 0.3 } }}
+          whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
           animate={{ scale: 1, transition: { duration: 0.3 } }}
-        className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100">
+          className="max-w-[550px] lg:ml-24 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-100"
+        >
           <Image
             className="w-full h-[300px] md:h-[400px] object-cover hover:opacity-90 transition duration-300"
             src={Img5} // Replace with the second card's image

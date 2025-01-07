@@ -81,290 +81,293 @@ export default function Page() {
 
   return (
     <>
-    <head>
+      <head>
         <title>Rooms | Lila Lodge</title>
-        <meta name="description" content="Explore the cozy rooms at Lila Lodge, Bentota." />
+        <meta
+          name="description"
+          content="Explore the cozy rooms at Lila Lodge, Bentota."
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
-              "itemListElement": [
+              itemListElement: [
                 {
                   "@type": "ListItem",
-                  "position": 1,
-                  "name": "Home",
-                  "item": "https://lila-lodge.vercel.app/"
+                  position: 1,
+                  name: "Home",
+                  item: "https://lila-lodge.vercel.app/",
                 },
                 {
                   "@type": "ListItem",
-                  "position": 2,
-                  "name": "Rooms",
-                  "item": "https://lila-lodge.vercel.app/rooms"
-                }
-              ]
-            })
+                  position: 2,
+                  name: "Rooms",
+                  item: "https://lila-lodge.vercel.app/rooms",
+                },
+              ],
+            }),
           }}
         ></script>
       </head>
-    <div className="font-Quicksand mb-24">
-      <div className="relative w-full h-[71vh] sm:h-[70vh] mb-10">
-        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-10"></div>
-        <Image
-          src={Img8}
-          alt="Hero Image"
-          className="w-full h-full object-cover z-0"
-          layout="fill"
-        />
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center m-3 lg:m-28 lg:mx-auto lg:text-center lg:justify-center lg:items-center">
-        <div className="text-center md:text-left lg:text-center space-y-4 lg:m-4">
-          <motion.h1
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{
-              delay: 0.2,
-              x: { type: "spring", stiffness: 60 },
-              opacity: { duration: 1 },
-              ease: "easeIn",
-              duration: 1,
-            }}
-            className="text-center lg:text-5xl text-4xl font-bold text-gray-800 leading-tight"
-          >
-            Step into a space designed for ultimate relaxation!
-          </motion.h1>
+      <div className="font-Quicksand mb-24">
+        <div className="relative w-full h-[71vh] sm:h-[70vh] mb-10">
+          <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-10"></div>
+          <Image
+            src={Img8}
+            alt="Hero Image"
+            className="w-full h-full object-cover z-0"
+            layout="fill"
+          />
         </div>
-        <div className="flex justify-center lg:justify-center lg:m-4">
-          <motion.p
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{
-              delay: 0.2,
-              x: { type: "spring", stiffness: 55 },
-              opacity: { duration: 1 },
-              ease: "easeIn",
-              duration: 1,
-            }}
-            className="text-center text-lg text-gray-700 leading-relaxed"
-          >
-            Lila Lodge, Bentota, offers serene stays tailored to every guest,
-            with Deluxe Double Rooms for couples and small families, and
-            spacious Family Rooms for families. Both options feature modern
-            comforts, stylish décor, and a relaxing atmosphere, ensuring
-            unforgettable memories for all
-          </motion.p>
-        </div>
-      </div>
-
-      {/* Carousel */}
-      <motion.div
-        initial={{ x: -100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{
-          delay: 0.2,
-          x: { type: "spring", stiffness: 50 },
-          opacity: { duration: 1 },
-          ease: "easeIn",
-          duration: 1,
-        }}
-        className="relative w-full max-w-4xl mx-auto mb-36"
-      >
-        <div className="relative w-full h-[500px] overflow-hidden rounded-lg">
-          {images.map((image, index) => (
-            <div
-              key={index}
-              className={`absolute inset-0 transition-transform duration-700 ease-in-out ${
-                index === currentIndex
-                  ? "transform translate-x-0 opacity-100 z-10"
-                  : "transform translate-x-full opacity-0 z-0"
-              }`}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center m-3 lg:m-28 lg:mx-auto lg:text-center lg:justify-center lg:items-center">
+          <div className="text-center md:text-left lg:text-center space-y-4 lg:m-4">
+            <motion.h1
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", stiffness: 60 },
+                opacity: { duration: 1 },
+                ease: "easeIn",
+                duration: 1,
+              }}
+              className="text-center lg:text-5xl text-4xl font-bold text-gray-800 leading-tight"
             >
-              <Image
-                src={image}
-                alt={`Slide ${index + 1}`}
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg"
-              />
-            </div>
-          ))}
+              Step into a space designed for ultimate relaxation!
+            </motion.h1>
+          </div>
+          <div className="flex justify-center lg:justify-center lg:m-4">
+            <motion.p
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", stiffness: 55 },
+                opacity: { duration: 1 },
+                ease: "easeIn",
+                duration: 1,
+              }}
+              className="text-center text-lg text-gray-700 leading-relaxed"
+            >
+              Lila Lodge, Bentota, offers serene stays tailored to every guest,
+              with Deluxe Double Rooms for couples and small families, and
+              spacious Family Rooms for families. Both options feature modern
+              comforts, stylish décor, and a relaxing atmosphere, ensuring
+              unforgettable memories for all
+            </motion.p>
+          </div>
         </div>
 
-        {/* Navigation Buttons */}
-        <button
-          onClick={prevSlide}
-          className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 z-20"
-        >
-          ❮
-        </button>
-        <button
-          onClick={nextSlide}
-          className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 z-20"
-        >
-          ❯
-        </button>
-
-        {/* Small Indicator Buttons */}
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-30">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              className={`w-3 h-3 rounded-full ${
-                index === currentIndex ? "bg-blue-500" : "bg-gray-300"
-              }`}
-              onClick={() => setCurrentIndex(index)}
-            ></button>
-          ))}
-        </div>
-
-        {/* Interactive Data Box */}
+        {/* Carousel */}
         <motion.div
-          initial={{ y: 100, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
           transition={{
             delay: 0.2,
-            y: { type: "spring", stiffness: 60 },
+            x: { type: "spring", stiffness: 50 },
             opacity: { duration: 1 },
             ease: "easeIn",
             duration: 1,
           }}
-          whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
-          animate={{ scale: 1, transition: { duration: 0.3 } }}
-          className="absolute -bottom-20 right-0 bg-white p-3 shadow-lg rounded-lg z-50 max-w-full sm:max-w-md w-full sm:w-[600px] h-[180px] flex flex-col justify-between"
+          className="relative w-full max-w-4xl mx-auto mb-36"
         >
-          <div className="flex-1">
-            <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3">
-              Deluxe Double Room
-            </h3>
-            <p className="text-sm sm:text-base text-gray-600">
-              Offer a perfect blend of comfort and elegance, featuring modern
-              amenities and serene views. Ideal for couples or small families
-            </p>
+          <div className="relative w-full h-[500px] overflow-hidden rounded-lg">
+            {images.map((image, index) => (
+              <div
+                key={index}
+                className={`absolute inset-0 transition-transform duration-700 ease-in-out ${
+                  index === currentIndex
+                    ? "transform translate-x-0 opacity-100 z-10"
+                    : "transform translate-x-full opacity-0 z-0"
+                }`}
+              >
+                <Image
+                  src={image}
+                  alt={`Slide ${index + 1}`}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-lg"
+                />
+              </div>
+            ))}
           </div>
 
-          {/* Buttons */}
-          <div className="flex justify-between space-x-2 mt-1">
-            <button
-              onClick={handleBookNow}
-              className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition duration-300 w-full hover:scale-105 transform"
-            >
-              Book Now
-            </button>
-            <button
-              onClick={handleBookDeluxeDouble}
-              className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition duration-300 w-full hover:scale-105 transform"
-            >
-              Explore
-            </button>
-          </div>
-        </motion.div>
-      </motion.div>
+          {/* Navigation Buttons */}
+          <button
+            onClick={prevSlide}
+            className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 z-20"
+          >
+            ❮
+          </button>
+          <button
+            onClick={nextSlide}
+            className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 z-20"
+          >
+            ❯
+          </button>
 
-      {/* Another Section */}
-      <motion.div
-        initial={{ x: -100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{
-          delay: 0.2,
-          x: { type: "spring", stiffness: 50 },
-          opacity: { duration: 1 },
-          ease: "easeIn",
-          duration: 1,
-        }}
-        className="relative w-full max-w-4xl mx-auto mb-6"
-      >
-        <div className="relative w-full h-[500px] overflow-hidden rounded-lg">
-          {imagesd.map((image, index) => (
-            <div
-              key={index}
-              className={`absolute inset-0 transition-transform duration-700 ease-in-out ${
-                index === currentIndex
-                  ? "transform translate-x-0 opacity-100 z-10"
-                  : "transform translate-x-full opacity-0 z-0"
-              }`}
-            >
-              <Image
-                src={image}
-                alt={`Slide ${index + 1}`}
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg"
-              />
+          {/* Small Indicator Buttons */}
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-30">
+            {images.map((_, index) => (
+              <button
+                key={index}
+                className={`w-3 h-3 rounded-full ${
+                  index === currentIndex ? "bg-blue-500" : "bg-gray-300"
+                }`}
+                onClick={() => setCurrentIndex(index)}
+              ></button>
+            ))}
+          </div>
+
+          {/* Interactive Data Box */}
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
+            animate={{ scale: 1, transition: { duration: 0.3 } }}
+            className="absolute -bottom-20 right-0 bg-white p-3 shadow-lg rounded-lg z-50 max-w-full sm:max-w-md w-full sm:w-[600px] h-[180px] flex flex-col justify-between"
+          >
+            <div className="flex-1">
+              <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3">
+                Deluxe Double Room
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600">
+                Offer a perfect blend of comfort and elegance, featuring modern
+                amenities and serene views. Ideal for couples or small families
+              </p>
             </div>
-          ))}
-        </div>
 
-        {/* Navigation Buttons */}
-        <button
-          onClick={prevSlided}
-          className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 z-20"
-        >
-          ❮
-        </button>
-        <button
-          onClick={nextSlided}
-          className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 z-20"
-        >
-          ❯
-        </button>
+            {/* Buttons */}
+            <div className="flex justify-between space-x-2 mt-1">
+              <button
+                onClick={handleBookNow}
+                className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition duration-300 w-full hover:scale-105 transform"
+              >
+                Book Now
+              </button>
+              <button
+                onClick={handleBookDeluxeDouble}
+                className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition duration-300 w-full hover:scale-105 transform"
+              >
+                Explore
+              </button>
+            </div>
+          </motion.div>
+        </motion.div>
 
-        {/* Small Indicator Buttons */}
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-30">
-          {imagesd.map((_, index) => (
-            <button
-              key={index}
-              className={`w-3 h-3 rounded-full ${
-                index === currentIndex ? "bg-blue-500" : "bg-gray-300"
-              }`}
-              onClick={() => setCurrentIndex(index)}
-            ></button>
-          ))}
-        </div>
-
-        {/* Interactive Data Box */}
+        {/* Another Section */}
         <motion.div
-          initial={{ y: 100, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
           transition={{
             delay: 0.2,
-            y: { type: "spring", stiffness: 60 },
+            x: { type: "spring", stiffness: 50 },
             opacity: { duration: 1 },
             ease: "easeIn",
             duration: 1,
           }}
-          whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
-          animate={{ scale: 1, transition: { duration: 0.3 } }}
-          className="absolute -bottom-20 right-0 bg-white p-3 shadow-lg rounded-lg z-50 max-w-full sm:max-w-md w-full sm:w-[600px] h-[180px] flex flex-col justify-between"
+          className="relative w-full max-w-4xl mx-auto mb-6"
         >
-          <div className="flex-1">
-            <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3">
-              Deluxe Family Room
-            </h3>
-            <p className="text-sm sm:text-base text-gray-600">
-              Designed with comfort and convenience in mind, these rooms offer
-              ample space, modern amenities, and a cozy atmosphere
-            </p>
+          <div className="relative w-full h-[500px] overflow-hidden rounded-lg">
+            {imagesd.map((image, index) => (
+              <div
+                key={index}
+                className={`absolute inset-0 transition-transform duration-700 ease-in-out ${
+                  index === currentIndex
+                    ? "transform translate-x-0 opacity-100 z-10"
+                    : "transform translate-x-full opacity-0 z-0"
+                }`}
+              >
+                <Image
+                  src={image}
+                  alt={`Slide ${index + 1}`}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-lg"
+                />
+              </div>
+            ))}
           </div>
 
-          {/* Buttons */}
-          <div className="flex justify-between space-x-2 mt-1">
-            <button
-              onClick={handleBookNow}
-              className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition duration-300 w-full hover:scale-105 transform"
-            >
-              Book Now
-            </button>
-            <button
-              onClick={handleBookDeluxeFamily}
-              className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition duration-300 w-full hover:scale-105 transform"
-            >
-              Explore
-            </button>
+          {/* Navigation Buttons */}
+          <button
+            onClick={prevSlided}
+            className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 z-20"
+          >
+            ❮
+          </button>
+          <button
+            onClick={nextSlided}
+            className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 z-20"
+          >
+            ❯
+          </button>
+
+          {/* Small Indicator Buttons */}
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-30">
+            {imagesd.map((_, index) => (
+              <button
+                key={index}
+                className={`w-3 h-3 rounded-full ${
+                  index === currentIndex ? "bg-blue-500" : "bg-gray-300"
+                }`}
+                onClick={() => setCurrentIndex(index)}
+              ></button>
+            ))}
           </div>
+
+          {/* Interactive Data Box */}
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
+            animate={{ scale: 1, transition: { duration: 0.3 } }}
+            className="absolute -bottom-20 right-0 bg-white p-3 shadow-lg rounded-lg z-50 max-w-full sm:max-w-md w-full sm:w-[600px] h-[180px] flex flex-col justify-between"
+          >
+            <div className="flex-1">
+              <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3">
+                Deluxe Family Room
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600">
+                Designed with comfort and convenience in mind, these rooms offer
+                ample space, modern amenities, and a cozy atmosphere
+              </p>
+            </div>
+
+            {/* Buttons */}
+            <div className="flex justify-between space-x-2 mt-1">
+              <button
+                onClick={handleBookNow}
+                className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition duration-300 w-full hover:scale-105 transform"
+              >
+                Book Now
+              </button>
+              <button
+                onClick={handleBookDeluxeFamily}
+                className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition duration-300 w-full hover:scale-105 transform"
+              >
+                Explore
+              </button>
+            </div>
+          </motion.div>
         </motion.div>
-      </motion.div>
-    </div>
+      </div>
     </>
   );
 }
