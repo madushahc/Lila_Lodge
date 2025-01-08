@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://www.lilalodge.com/public/_O4A8549.jpg",
+
         width: 800,
         height: 600,
         alt: "Lila Lodge - Luxurious Villas in Bentota",
