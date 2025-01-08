@@ -149,10 +149,10 @@ export default function Book() {
                     Select your room
                   </option>
                   <option value="Deluxe Double Room">
-                    Deluxe Double Room - $40
+                    Deluxe Double Room $40
                   </option>
                   <option value="Deluxe Family Room">
-                    Deluxe Family Room - $50
+                    Deluxe Family Room $50
                   </option>
                   <option value="Any Preferred Room Type">
                     Any Preferred Room Type
