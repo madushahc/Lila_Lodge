@@ -41,6 +41,11 @@ export default function RootLayout({
           name="description"
           content="Escape to serenity at Lila Lodge in Bentota, Sri Lanka."
         />
+          <link
+          rel="icon"
+          type="image/png"
+          href="https://www.lilalodge.com/favicon.ico"
+        ></link>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
